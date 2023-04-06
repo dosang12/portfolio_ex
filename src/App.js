@@ -1,13 +1,16 @@
 import styled from "styled-components";
 import Header from "./components/Banner/Header";
+import SideBar from "./components/Banner/sidebar";
 import ProfComponent from "./components/Banner/ProfComponent";
 import Clients from "./components/Clients/Clients";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 import Services from "./components/Service/Services";
+
 function App() {
   return (
     <Container>
+      <SideBar />
       <Banner>
         <Header />
         <ProfComponent />
@@ -27,6 +30,7 @@ function App() {
 export default App;
 
 const Container = styled.div``;
+
 const Banner = styled.div`
   background: #f0ead6;
   height: 100vh;

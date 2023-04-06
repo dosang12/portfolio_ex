@@ -38,7 +38,7 @@ const Footer = () => {
               <FiPhoneCall />
             </span>
             <Slide direction="left">
-              <a href="tel:+4733378901">+47 333 78 901</a>
+              <a href="tel:+4733378901">+47 010 0000 0000</a>
             </Slide>
           </div>
           <div>
@@ -48,7 +48,7 @@ const Footer = () => {
               </span>
             </Slide>
             <Slide>
-              <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
+              <a href="mailto:miladamiri@gmail.com">knight2671@gmail.com</a>
             </Slide>
           </div>
         </div>
@@ -243,7 +243,7 @@ const Form = styled.div`
     .email,
     .message {
       display: flex;
-      border: 1px solid #ffeecb;
+      border: 1px solid #d3d3a9;
       margin-bottom: 0.5rem;
       input,
       textarea {

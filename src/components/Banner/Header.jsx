@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { GiCandleFlame } from "react-icons/gi";
+import myLogo from "../images/no_back_logo_blue.png";
 
 const Header = () => {
   const [bar, setBar] = useState(false);
   return (
     <Container bar={bar}>
       <Logo>
-        <span className="green">
-          <GiCandleFlame />
+        <span>
+          <img className="profileImg" src={myLogo} alt="profile" />
         </span>
         <h1>Portfolio</h1>
       </Logo>
@@ -99,6 +99,10 @@ const Logo = styled.div`
   span {
     font-size: 1.8rem;
   }
+  img {
+    width: 30px;
+    height: 30px;
+  }
 
   h1 {
     font-weight: 600;
@@ -110,7 +114,7 @@ const Nav = styled.div`
     position: fixed;
     display: flex;
     flex-direction: column;
-    background-color: #ffff99;
+    background-color: #73a079;
     inset: 0;
     justify-content: center;
     align-items: center;
@@ -136,7 +140,7 @@ const Nav = styled.div`
         right: 0;
         bottom: -5px;
         height: 2px;
-        background-color: #ffff99;
+        background-color: #73a079;
         transform: scale(0);
         transform-origin: right;
         transition: transform 400ms ease-in-out;
