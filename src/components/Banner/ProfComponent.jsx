@@ -67,6 +67,7 @@ const Container = styled.div`
 `;
 const Texts = styled.div`
   flex: 1;
+  word-break: break-all;
   h4 {
     padding: 1rem 0;
     font-weight: 500;

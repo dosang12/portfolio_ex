@@ -9,21 +9,24 @@ import Services from "./components/Service/Services";
 
 function App() {
   return (
-    <Container>
+    <>
       <SideBar />
-      <Banner>
-        <Header />
-        <ProfComponent />
-      </Banner>
-      <Services />
-      <LightColor>
-        <Projects />
-      </LightColor>
-      <Clients />
-      <LightColor>
-        <Footer />
-      </LightColor>
-    </Container>
+      <Container>
+        <SideBar />
+        <Banner>
+          <Header />
+          <ProfComponent />
+        </Banner>
+        <Services />
+        <LightColor>
+          <Projects />
+        </LightColor>
+        <Clients />
+        <LightColor>
+          <Footer />
+        </LightColor>
+      </Container>
+    </>
   );
 }
 
