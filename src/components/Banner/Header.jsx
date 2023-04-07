@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import myLogo from "../images/no_back_logo_blue.png";
+import myLogo from "../images/logo192.png";
 
 const Header = () => {
   const [bar, setBar] = useState(false);
@@ -10,7 +10,7 @@ const Header = () => {
         <span>
           <img className="profileImg" src={myLogo} alt="profile" />
         </span>
-        <h1>Portfolio</h1>
+        <h1>Do Sang Yoon</h1>
       </Logo>
       <Nav bar={bar}>
         <span>
@@ -42,7 +42,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1280px;
+  max-width: 1152px;
   width: 80%;
   margin: 0 auto;
   padding: 1.5rem 0;

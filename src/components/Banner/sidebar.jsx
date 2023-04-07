@@ -38,6 +38,10 @@ const SideBar = () => {
 export default SideBar;
 
 const Nav = styled.div`
+  background-color: #ffffffaa;
+  border-radius: 10px;
+  margin-right: 2rem;
+  z-index: 999;
   @media (max-width: 640px) {
     display: none;
   }
@@ -46,19 +50,20 @@ const Nav = styled.div`
   right: 0;
   transform: translateY(-50%);
   .sidebarnav {
-    width: 150px;
+    width: 120px;
     height: 100%;
     display: flex;
     flex-direction: column;
   }
   div {
     margin: 15px 0;
+    text-align: center;
   }
   a {
     text-decoration: none;
     color: #444;
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     cursor: pointer;
     transition: all 0.3s ease;
     &:hover {

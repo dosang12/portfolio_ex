@@ -22,7 +22,7 @@ let data = [
     disc: "수자원공사 리뉴얼 페이지 프로젝트",
   },
   {
-    img: "https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-6/307859034_180681467858996_2464066227778309423_n.png?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=NUeySyl9IDQAX8I_V2_&_nc_ht=scontent-ssn1-1.xx&oh=00_AfBecrV2sj668cuvGVtzYde13sVVi7WGs85841panjvPDQ&oe=64340A04",
+    img: "https://github.com/dosang12/react_project_1_front/blob/main/images/mainpage.png?raw=true",
     disc: "풀스택 가구 쇼핑몰 4niture 프로젝트",
   },
 ];

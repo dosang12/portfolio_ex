@@ -106,7 +106,7 @@ export default Clients;
 
 const Container = styled.div`
   width: 80%;
-  max-width: 1280px;
+  max-width: 1152px;
   margin: 0 auto;
   padding: 4rem 0;
 

@@ -54,7 +54,7 @@ const Container = styled.div`
   gap: 2rem;
   padding-top: 10rem;
   width: 80%;
-  max-width: 1280px;
+  max-width: 1152px;
   margin: 0 auto;
   z-index: 1;
   @media (max-width: 840px) {
