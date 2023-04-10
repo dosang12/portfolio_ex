@@ -140,7 +140,7 @@ const Nav = styled.div`
         right: 0;
         bottom: -5px;
         height: 2px;
-        background-color: #73a079;
+        background-color: #c5c6d0;
         transform: scale(0);
         transform-origin: right;
         transition: transform 400ms ease-in-out;

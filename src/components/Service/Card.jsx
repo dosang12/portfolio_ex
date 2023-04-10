@@ -18,7 +18,7 @@ export default Card;
 
 const Container = styled.div`
   width: 100%;
-  background: #73a079;
+  background: #f1f3f5;
   padding: 1rem;
   text-align: center;
   span {

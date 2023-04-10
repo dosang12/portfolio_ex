@@ -214,7 +214,7 @@ const Profile = styled.div`
 const ArrowUp = styled.div`
   width: 2rem;
   height: 2rem;
-  background-color: #01be96;
+  background-color: #c5c6d0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,7 +236,7 @@ const Form = styled.div`
   }
 
   form {
-    background-color: #73a079;
+    background-color: #f1f3f5;
     padding: 0.8rem;
     border-radius: 5px;
     .name,

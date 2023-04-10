@@ -35,7 +35,7 @@ export default App;
 const Container = styled.div``;
 
 const Banner = styled.div`
-  background: #f0ead6;
+  background: #ffffff;
   height: 100vh;
   @media (max-width: 640px) {
     height: 100%;
@@ -44,5 +44,5 @@ const Banner = styled.div`
 `;
 
 const LightColor = styled.div`
-  background: #f0ead6;
+  background: #ffffff;
 `;

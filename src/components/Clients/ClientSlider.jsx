@@ -36,7 +36,7 @@ const ClientSlider = (props) => {
 export default ClientSlider;
 
 const Container = styled.div`
-  background: #73a079;
+  background: #f1f3f5;
   padding: 1.5rem 1rem;
   margin: 0 1rem;
 `;

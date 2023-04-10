@@ -11,7 +11,7 @@
 
 :root {
   --lighter: linear-gradient(159deg, rgb(197, 197, 197) 0%, rgb(223, 223, 243) 100%);
-  ---background: #ffeecb;
+  ---background: #c5c6d0;
 }
 
 body {
