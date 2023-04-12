@@ -19,17 +19,17 @@ const Footer = () => {
     <Container id="footer">
       <Profile>
         <Slide direction="left" delay={1}>
-          <h1>Portfolio</h1>
+          <h1>Contact me</h1>
         </Slide>
         <div className="address">
           <Slide direction="left">
             <h1>Address:</h1>
           </Slide>
           <Slide direction="left">
-            <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
+            <h3>1030 Southwood Dr San Luis Obispo, California(CA), 93401</h3>
           </Slide>
         </div>
-        <div className="links">
+        <div className="contactLinks">
           <Slide direction="left">
             <h1>Contact me directly:</h1>
           </Slide>
@@ -159,7 +159,7 @@ const Profile = styled.div`
     }
   }
 
-  .links {
+  .contactLinks {
     h1 {
       font-size: 1.2rem;
       margin-bottom: 0.5rem;

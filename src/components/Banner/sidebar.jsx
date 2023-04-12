@@ -3,29 +3,86 @@ import styled from "styled-components";
 
 const SideBar = () => {
   const [bar, setBar] = useState(false);
+  const [homeText, setHomeText] = useState("🏠");
+  const [serviceText, setServiceText] = useState("🔧");
+  const [projectText, setProjectText] = useState("💻");
+  const [clientText, setClientText] = useState("📚");
+  const [contactText, setContactText] = useState("📤");
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
+
+  const handleHomeHover = () => {
+    setHomeText("home");
+  };
+
+  const handleHomeLeave = () => {
+    setHomeText("🏠");
+  };
+
+  const handleServiceHover = () => {
+    setServiceText("service");
+  };
+
+  const handleServiceLeave = () => {
+    setServiceText("🔧");
+  };
+
+  const handleProjectHover = () => {
+    setProjectText("project");
+  };
+
+  const handleProjectLeave = () => {
+    setProjectText("💻");
+  };
+
+  const handleClientHover = () => {
+    setClientText("client");
+  };
+
+  const handleClientLeave = () => {
+    setClientText("📚");
+  };
+
+  const handleContactHover = () => {
+    setContactText("footer");
+  };
+
+  const handleContactLeave = () => {
+    setContactText("📤");
+  };
+
   return (
     <Nav bar={bar}>
       <div className="sidebarnav">
         <div>
-          <a href="#home">Home</a>
+          <a href="#home" onMouseEnter={handleHomeHover} onMouseLeave={handleHomeLeave}>
+            {homeText}
+          </a>
         </div>
         <div>
-          <a href="#service">Services</a>
+          <a href="#service" onMouseEnter={handleServiceHover} onMouseLeave={handleServiceLeave}>
+            {serviceText}
+          </a>
         </div>
         <div>
-          <a href="#project">Projects</a>
+          <a href="#project" onMouseEnter={handleProjectHover} onMouseLeave={handleProjectLeave}>
+            {projectText}
+          </a>
         </div>
         <div>
-          <a href="#client">Testimonials</a>
+          <a href="#client" onMouseEnter={handleClientHover} onMouseLeave={handleClientLeave}>
+            {clientText}
+          </a>
         </div>
         <div>
-          <a href="#footer">Portfolio</a>
+          <a href="#footer" onMouseEnter={handleContactHover} onMouseLeave={handleContactLeave}>
+            {contactText}
+          </a>
         </div>
         <div>
           <a onClick={scrollToTop}>Top</a>
@@ -40,7 +97,7 @@ export default SideBar;
 const Nav = styled.div`
   background-color: #ffffffaa;
   border-radius: 10px;
-  margin-right: 2rem;
+
   z-index: 999;
   @media (max-width: 640px) {
     display: none;
@@ -50,19 +107,21 @@ const Nav = styled.div`
   right: 0;
   transform: translateY(-50%);
   .sidebarnav {
-    width: 120px;
+    width: 80px;
     height: 100%;
     display: flex;
     flex-direction: column;
   }
-  div {
-    margin: 15px 0;
+  div div {
     text-align: center;
   }
   a {
     text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
     color: #444;
-    padding: 1rem;
+    padding: 15px;
     font-size: 0.8rem;
     cursor: pointer;
     transition: all 0.3s ease;

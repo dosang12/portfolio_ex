@@ -74,7 +74,7 @@ const Texts = styled.div`
   }
   h1 {
     font-size: 2rem;
-    font-family: "Secular One", sans-serif;
+    font-family: "Pretendard", sans-serif;
     letter-spacing: 2px;
   }
   h3 {
