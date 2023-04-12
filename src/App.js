@@ -4,7 +4,8 @@ import SideBar from "./components/Banner/sidebar";
 import ProfComponent from "./components/Banner/ProfComponent";
 import Clients from "./components/Clients/Clients";
 import Footer from "./components/Footer/Footer";
-import Projects from "./components/Projects/Projects";
+
+import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/Service/Services";
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
         </Banner>
         <Services />
         <LightColor>
-          <Projects />
+          <Portfolio />
         </LightColor>
         <Clients />
         <LightColor>
