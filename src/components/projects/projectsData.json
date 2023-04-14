@@ -1,9 +1,9 @@
 [
   {
     "title": "수자원공사 리뉴얼",
-    "image": "./projectImages/bike.png",
-    "description": "I was responsible for the routing functionality of Bike Buddy, an application that helps parents and guardians keep their children safe while cycling. Utilises the Leaflet.js library and TomTom Routing/Reverse Geolocation API's to create an interactive and visually appealing map that allows a user to plot a route, taking into account various factors such as traffic levels, bicycle lanes, and elevation.",
+    "image": "./projectImages/K_water.png",
     "technologies": "JS | HTML | CSS",
+    "description": "작년 2022년 우리나라에서는 찾아보기 힘들었던 가뭄 현상이 심각한 문제로 대두 되었고. 지금도 남부지방에는 물부족 심화현상으로 물 자원에 대한 중요성이 커지고 있지만 많은 사람들이 그 심각성에 대해 깨닫지 못하고 있다. 따라서 물도 유한한 자원으로 보고 더욱 소중히 해야한다는 마음을 다시 새기기 위해. 수자원공사 벤치마킹 준비해 보았다. ",
     "github": "https://github.com/mdyeates/bike-buddy",
     "deployed": "https://norrinradd8.github.io/bike_buddy/",
     "bgcolor": "#f37737",
@@ -11,7 +11,7 @@
   },
   {
     "title": "Weather4u",
-    "image": "./projectImages/weather.png",
+    "image": "./projectImages/weather4u.png",
     "technologies": "JS | Bootstrap | CSS",
     "description": " This dashboard uses the OpenWeatherMap API to retrieve detailed weather data, including the city name, date, weather icon, temperature, humidity, and wind speed. The dashboard has a 5-day forecast feature and a search history feature that saves past searches for easy access. It also has a dark/light theme that changes the look of the page based on day or night in the searched location and uses the geolocation API to automatically determine the user's current location and display the weather.",
     "github": "https://github.com/mdyeates/weather-app",

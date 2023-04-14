@@ -22,3 +22,5 @@ Watch more videos from me [Milad Tech](https://www.youtube.com/@miladtech2844)
 - [Styled-Components](https://styled-components.com)
 - [React Slick](https://react-slick.neostack.com)
 - [React Awesome Reveal](https://react-awesome-reveal.morello.dev/)
+
+부트스트랩도 사용.

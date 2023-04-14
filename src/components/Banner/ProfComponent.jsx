@@ -12,9 +12,11 @@ const ProfComponent = () => {
       <Slide direction="left">
         <Texts>
           <h4>안녕하십니까!</h4>
-          <h1 className="green">신입 프론트엔드 윤도상입니다.</h1>
-          <h3>이곳은 더미 텍스트 구간입니다</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, iusto. Adipisci in qui officia provident tenetur sequi, deserunt corporis quos?</p>
+          <br />
+          <h1 className="green">상상 이상을 만드는 도상!</h1>
+          <br />
+          <h3>신입 프론트엔드 윤도상입니다.</h3>
+          <p>저는 개발자로서 창의적이고 도전적인 마인드로 항상 새로운 기술과 개발 방법을 탐구합니다.</p>
           <button>Let's talk</button>
           <Social>
             <p>Check out my</p>
@@ -57,6 +59,14 @@ const Container = styled.div`
   max-width: 1152px;
   margin: 0 auto;
   z-index: 1;
+  .css-2qfv45 {
+    width: 60%;
+  }
+  .css-17ud6we {
+    width: 40%;
+    text-align: center;
+  }
+
   @media (max-width: 840px) {
     width: 90%;
   }
@@ -65,10 +75,11 @@ const Container = styled.div`
     flex-direction: column;
   }
 `;
+
 const Texts = styled.div`
   flex: 1;
   word-break: break-all;
-  h4 {
+  width: 60% h4 {
     padding: 1rem 0;
     font-weight: 500;
   }
@@ -84,7 +95,8 @@ const Texts = styled.div`
     text-transform: capitalize;
   }
   p {
-    font-weight: 300;
+    font-weight: 400;
+    word-break: keep-all;
   }
 
   button {

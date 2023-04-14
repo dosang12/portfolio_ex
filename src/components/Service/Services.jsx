@@ -60,6 +60,7 @@ const Cards = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin-top: 4rem;
   gap: 1rem;
+  line-height: 1.5;
   word-break: keep-all;
   grid-auto-rows: 1fr;
   div {

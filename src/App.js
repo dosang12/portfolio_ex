@@ -2,10 +2,9 @@ import styled from "styled-components";
 import Header from "./components/Banner/Header";
 import SideBar from "./components/Banner/sidebar";
 import ProfComponent from "./components/Banner/ProfComponent";
-import Clients from "./components/Clients/Clients";
+import Skills from "./components/Skills/Skills";
 import Footer from "./components/Footer/Footer";
-
-import Portfolio from "./components/portfolio/Portfolio";
+import Portfolio from "./components/projects/projects";
 import Services from "./components/Service/Services";
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
         <LightColor>
           <Portfolio />
         </LightColor>
-        <Clients />
+        <Skills />
         <LightColor>
           <Footer />
         </LightColor>

@@ -10,7 +10,7 @@ const Portfolio = () => {
   return (
     <Container id="project">
       <section className="portfolio" id="project">
-        <PageHeader title="Project" description="View my work" />
+        <PageHeader title="Project List" description="View my work" />
         <div className="row">
           <ProjectList />
         </div>
