@@ -21,7 +21,7 @@
   },
   {
     "title": "4NITURE",
-    "image": "./projectImages/team.png",
+    "image": "./projectImages/4niture.png",
     "technologies": "React | Node | JS | MYSQL | ",
     "description": "Team Dashboard is a Node command-line application that takes in information about employees to generate a dynamic HTML web page.",
     "github": "https://github.com/mdyeates/team-dashboard",
@@ -30,9 +30,9 @@
     "id": "3"
   },
   {
-    "title": "Quiz",
-    "image": "./projectImages/quiz.png",
-    "technologies": "JS | HTML | CSS",
+    "title": "4NITURE-App",
+    "image": "./projectImages/4niture_native.png",
+    "technologies": "React-Native",
     "description": "A quiz app on the fundamentals of JavaScript. There are 5 randomly selected multiple-choice questions and the user will have a time limit of 50 seconds. The remaining time will determine their score at the end. The user will be penalised by 10 seconds for every incorrect answer.",
     "github": "https://github.com/mdyeates/coding-quiz",
     "deployed": "https://mdyeates.github.io/coding-quiz/",
@@ -41,7 +41,7 @@
   },
 
   {
-    "title": "P1",
+    "title": "Vue-project",
     "image": "./projectImages/P1.png",
     "description": "Welcome to P1, your virtual pit stop for the latest updates and standings in the world of F1. But that's not all—we've also got the ultimate card game where driver knowledge is the key to victory.",
     "technologies": "React | Framer | CSS | Bootstrap | Node",
@@ -52,7 +52,7 @@
   },
 
   {
-    "title": "Planner",
+    "title": "Extra-project",
     "image": "./projectImages/planner.png",
     "technologies": "JS | Bootstrap | Moment",
     "description": "Make every hour count with this simple Daily Planner App. You can keep track of all important appointments during a normal 9-5 work day!",
