@@ -23,7 +23,7 @@ const Header = () => {
           <a href="#project">Projects</a>
         </span>
         <span>
-          <a href="#client">Testimonials</a>
+          <a href="#Skills">Myskills</a>
         </span>
         <span>
           <a href="#footer">Portfolio</a>

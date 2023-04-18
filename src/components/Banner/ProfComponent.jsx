@@ -5,6 +5,9 @@ import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 import myImage from "../images/dosang.png";
+import { motion } from "framer-motion";
+import { EarthCanvas } from "../canvas";
+import { slideIn } from "../utils/motion";
 
 const ProfComponent = () => {
   return (
@@ -15,7 +18,7 @@ const ProfComponent = () => {
           <br />
           <h1 className="green">상상 이상을 만드는 도상!</h1>
           <br />
-          <h3>신입 프론트엔드 윤도상입니다.</h3>
+          <h3>신입 프론트엔드 / 기획자 윤도상입니다.</h3>
           <p>저는 개발자로서 창의적이고 도전적인 마인드로 항상 새로운 기술과 개발 방법을 탐구합니다.</p>
           <button>Let's talk</button>
           <Social>
@@ -42,6 +45,9 @@ const ProfComponent = () => {
       </Slide>
       <Slide direction="right">
         <Profile>
+          <motion.div variants={slideIn("right", "tween", 0.2, 1)} className="earth">
+            <EarthCanvas />
+          </motion.div>
           <img className="profileImg" src={myImage} alt="profile" />
         </Profile>
       </Slide>
@@ -54,7 +60,6 @@ export default ProfComponent;
 const Container = styled.div`
   display: flex;
   gap: 2rem;
-  padding-top: 10rem;
   width: 80%;
   max-width: 1152px;
   margin: 0 auto;
@@ -79,6 +84,7 @@ const Container = styled.div`
 const Texts = styled.div`
   flex: 1;
   word-break: break-all;
+  padding-top: 10rem;
   width: 60% h4 {
     padding: 1rem 0;
     font-weight: 500;
@@ -151,8 +157,17 @@ const Social = styled.div`
   }
 `;
 const Profile = styled.div`
+  .earth {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    right: 0;
+    top: 30%;
+  }
   img {
-    width: 20rem;
+    position: absolute;
+    left: 0;
+    width: 29rem;
     filter: drop-shadow(0px 10px 10px #01be9570);
     transition: transform 400ms ease-in-out;
     @media (max-width: 790px) {

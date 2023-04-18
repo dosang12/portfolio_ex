@@ -24,3 +24,9 @@ Watch more videos from me [Milad Tech](https://www.youtube.com/@miladtech2844)
 - [React Awesome Reveal](https://react-awesome-reveal.morello.dev/)
 
 부트스트랩도 사용.
+
+-npm i three
+-npm npm install @react-three/fiber
+-npm install @react-three/drei
+-npm install framer motion --save --legacy-peer-deps
+-npm install slidein --save --legacy-peer-deps
