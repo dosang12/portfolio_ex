@@ -10,7 +10,7 @@ const Services = () => {
   return (
     <Container id="service">
       <Slide direction="down">
-        <h4>My services</h4>
+        <h4>Introducing Myself</h4>
         <h1>What I Do</h1>
       </Slide>
       <Cards>

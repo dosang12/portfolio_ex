@@ -26,7 +26,7 @@ const Header = () => {
           <a href="#Skills">Myskills</a>
         </span>
         <span>
-          <a href="#footer">Portfolio</a>
+          <a href="#footer">Contact</a>
         </span>
       </Nav>
       <div onClick={() => setBar(!bar)} className="bars">

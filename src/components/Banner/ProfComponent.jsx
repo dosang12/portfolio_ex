@@ -4,7 +4,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
-import myImage from "../images/dosang.png";
+import myImage from "../images/dosang2.png";
 import { motion } from "framer-motion";
 import { EarthCanvas } from "../canvas";
 import { slideIn } from "../utils/motion";
@@ -15,8 +15,9 @@ const ProfComponent = () => {
       <Slide direction="left">
         <Texts>
           <h4>안녕하십니까!</h4>
-          <br />
-          <h1 className="green">상상 이상을 만드는 도상!</h1>
+          <h1 className="mainmassage">
+            기획도 잘하는 프론트엔드! <br /> 상상 이상을 만드는 도상!
+          </h1>
           <br />
           <h3>신입 프론트엔드 / 기획자 윤도상입니다.</h3>
           <p>저는 개발자로서 창의적이고 도전적인 마인드로 항상 새로운 기술과 개발 방법을 탐구합니다.</p>
@@ -60,16 +61,22 @@ export default ProfComponent;
 const Container = styled.div`
   display: flex;
   gap: 2rem;
-  width: 80%;
+  width: 90%;
   max-width: 1152px;
   margin: 0 auto;
   z-index: 1;
   .css-2qfv45 {
     width: 60%;
+    @media (max-width: 640px) {
+      width: 100%;
+    }
   }
   .css-17ud6we {
     width: 40%;
     text-align: center;
+    @media (max-width: 640px) {
+      width: 100%;
+    }
   }
 
   @media (max-width: 840px) {
@@ -85,12 +92,17 @@ const Texts = styled.div`
   flex: 1;
   word-break: break-all;
   padding-top: 10rem;
-  width: 60% h4 {
+  width: 100%;
+  @media (max-width: 640px) {
+    width: 100%;
+    padding-top: 3rem;
+  }
+  h4 {
     padding: 1rem 0;
     font-weight: 500;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: "Pretendard", sans-serif;
     letter-spacing: 2px;
   }
@@ -123,7 +135,6 @@ const Social = styled.div`
   margin-top: 3rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
   p {
     font-size: 0.9rem;
     @media (max-width: 690px) {
@@ -166,19 +177,26 @@ const Profile = styled.div`
     z-index: 99;
   }
   img {
-    width: 100%;
+    position: absolute;
+    left: -150px;
+    width: 110%;
     transition: transform 400ms ease-in-out;
+    margin: 0;
+    @media (max-width: 1060px) {
+      left: -50px;
+    }
     @media (max-width: 790px) {
       width: 20rem;
+      left: -50px;
     }
 
     @media (max-width: 660px) {
       width: 18rem;
+      position: relative;
     }
 
     @media (max-width: 640px) {
       width: 15rem;
-      margin-left: 25%;
     }
   }
 

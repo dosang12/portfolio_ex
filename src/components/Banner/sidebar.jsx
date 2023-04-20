@@ -17,7 +17,7 @@ const SideBar = () => {
   };
 
   const handleHomeHover = () => {
-    setHomeText("home");
+    setHomeText("Home");
   };
 
   const handleHomeLeave = () => {
@@ -25,7 +25,7 @@ const SideBar = () => {
   };
 
   const handleServiceHover = () => {
-    setServiceText("service");
+    setServiceText("Service");
   };
 
   const handleServiceLeave = () => {
@@ -33,7 +33,7 @@ const SideBar = () => {
   };
 
   const handleProjectHover = () => {
-    setProjectText("project");
+    setProjectText("Project");
   };
 
   const handleProjectLeave = () => {
@@ -41,7 +41,7 @@ const SideBar = () => {
   };
 
   const handleClientHover = () => {
-    setClientText("client");
+    setClientText("Myskill");
   };
 
   const handleClientLeave = () => {
@@ -49,11 +49,11 @@ const SideBar = () => {
   };
 
   const handleContactHover = () => {
-    setContactText("footer");
+    setContactText("Contact");
   };
 
   const handleContactLeave = () => {
-    setContactText("📤");
+    setContactText("📩");
   };
 
   return (
