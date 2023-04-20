@@ -159,16 +159,14 @@ const Social = styled.div`
 const Profile = styled.div`
   .earth {
     position: absolute;
-    width: 30%;
-    height: 30%;
+    width: 150px;
+    height: 150px;
     right: 0;
     top: 30%;
+    z-index: 99;
   }
   img {
-    position: absolute;
-    left: 0;
-    width: 29rem;
-    filter: drop-shadow(0px 10px 10px #01be9570);
+    width: 100%;
     transition: transform 400ms ease-in-out;
     @media (max-width: 790px) {
       width: 20rem;

@@ -10,7 +10,6 @@ import Services from "./components/Service/Services";
 function App() {
   return (
     <>
-      <SideBar />
       <Container>
         <SideBar />
         <Banner>
@@ -35,7 +34,13 @@ export default App;
 const Container = styled.div``;
 
 const Banner = styled.div`
-  background: #ffffff;
+  background-color: white;
+  background-image: url("/components/images/mainbg.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 40% auto;
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
   height: 100vh;
   @media (max-width: 640px) {
     height: 100%;
