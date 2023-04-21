@@ -48,6 +48,7 @@ const Container = styled.div`
   padding: 1.5rem 0;
   position: relative;
   animation: header 500ms ease-in-out;
+
   @media (max-width: 840px) {
     width: 90%;
   }

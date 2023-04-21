@@ -26,7 +26,7 @@ const Footer = () => {
             <h1>Address:</h1>
           </Slide>
           <Slide direction="left">
-            <h3>1030 Southwood Dr San Luis Obispo, California(CA), 93401</h3>
+            <h3>서울시 노원구 노원로 564.</h3>
           </Slide>
         </div>
         <div className="contactLinks">

@@ -103,7 +103,6 @@ const Container = styled.div`
   @media (max-width: 840px) {
     width: 90%;
   }
-  }
 `;
 
 const Myskills = styled.div`
@@ -112,12 +111,17 @@ const Myskills = styled.div`
     display: flex;
     flex-flow: wrap;
     border: 1px solid black;
+    
   }
   .skillbox {
+    position
     display: flex;
     flex-direction: column;
     width: 25%;
     padding: 10px;
+    @media (max-width: 982px) {
+    width: 50%;
+  }
 
     .row_first {
       display: flex;
@@ -129,6 +133,7 @@ const Myskills = styled.div`
     .row_second {
       display: flex;
       justify-content: center;
+      
       span {
         text-align: center;
       }
@@ -137,9 +142,10 @@ const Myskills = styled.div`
       display: flex;
       justify-content: center;
       border-bottom: 5px solid black;
+      border-radius
       span {
         text-align: center;
-      }
+    }
     }
   }
 `;

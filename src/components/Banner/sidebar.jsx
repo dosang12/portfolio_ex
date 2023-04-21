@@ -111,6 +111,7 @@ const Nav = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
+    flex-di
   }
   div div {
     text-align: center;
