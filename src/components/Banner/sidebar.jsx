@@ -6,7 +6,7 @@ const SideBar = () => {
   const [homeText, setHomeText] = useState("🏠");
   const [serviceText, setServiceText] = useState("🔧");
   const [projectText, setProjectText] = useState("💻");
-  const [clientText, setClientText] = useState("📚");
+  const [skillText, setSkillText] = useState("📚");
   const [contactText, setContactText] = useState("📤");
 
   const scrollToTop = () => {
@@ -41,11 +41,11 @@ const SideBar = () => {
   };
 
   const handleClientHover = () => {
-    setClientText("Myskill");
+    setSkillText("Myskill");
   };
 
   const handleClientLeave = () => {
-    setClientText("📚");
+    setSkillText("📚");
   };
 
   const handleContactHover = () => {
@@ -75,8 +75,8 @@ const SideBar = () => {
           </a>
         </div>
         <div>
-          <a href="#client" onMouseEnter={handleClientHover} onMouseLeave={handleClientLeave}>
-            {clientText}
+          <a href="#Skills" onMouseEnter={handleClientHover} onMouseLeave={handleClientLeave}>
+            {skillText}
           </a>
         </div>
         <div>
@@ -111,7 +111,6 @@ const Nav = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
-    flex-di
   }
   div div {
     text-align: center;

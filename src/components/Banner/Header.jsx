@@ -4,6 +4,9 @@ import myLogo from "../images/logo192.png";
 
 const Header = () => {
   const [bar, setBar] = useState(false);
+  const handleClick = () => {
+    setBar(false);
+  };
   return (
     <Container bar={bar}>
       <Logo>
@@ -14,19 +17,29 @@ const Header = () => {
       </Logo>
       <Nav bar={bar}>
         <span>
-          <a href="#home">Home</a>
+          <a href="#home" onClick={handleClick}>
+            Home
+          </a>
         </span>
         <span>
-          <a href="#service">Services</a>
+          <a href="#service" onClick={handleClick}>
+            Services
+          </a>
         </span>
         <span>
-          <a href="#project">Projects</a>
+          <a href="#project" onClick={handleClick}>
+            Projects
+          </a>
         </span>
         <span>
-          <a href="#Skills">Myskills</a>
+          <a href="#Skills" onClick={handleClick}>
+            Myskills
+          </a>
         </span>
         <span>
-          <a href="#footer">Contact</a>
+          <a href="#footer" onClick={handleClick}>
+            Contact
+          </a>
         </span>
       </Nav>
       <div onClick={() => setBar(!bar)} className="bars">
@@ -57,16 +70,16 @@ const Container = styled.div`
   }
   @media (max-width: 640px) {
     .bars {
-      width: 40px;
-      height: 40px;
-      position: relative;
+      width: 30px;
+      height: 30px;
+      position: fixed;
+      right: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 0.5rem;
       z-index: 100;
       .bar {
-        position: absolute;
         width: 100%;
         height: 2px;
         background-color: ${(props) => (props.bar ? "transparent" : "#fff")};
@@ -74,20 +87,23 @@ const Container = styled.div`
         :before,
         :after {
           content: "";
+
           width: 100%;
           height: 2px;
-          background-color: #fff;
+          background-color: #73a079;
           position: absolute;
         }
 
         :before {
           transform: ${(props) => (props.bar ? "rotate(45deg)" : "translateY(10px)")};
           transition: all 400ms ease-in-out;
+          background-color: #fff;
         }
 
         :after {
           transform: ${(props) => (props.bar ? "rotate(-45deg)" : "translateY(-10px)")};
           transition: all 400ms ease-in-out;
+          background-color: #fff;
         }
       }
     }
@@ -97,6 +113,8 @@ const Logo = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  z-index: 105;
+
   span {
     font-size: 1.8rem;
   }
