@@ -151,6 +151,10 @@ const Myskills = styled.div`
     flex-direction: column;
     width: 25%;
     padding: 10px;
+    transition: transform 400ms ease-in-out;
+    :hover {
+      transform: translateY(-10px);
+    }
     @media (max-width: 982px) {
       width: 50%;
     }
@@ -187,19 +191,11 @@ const Myskills = styled.div`
       .skillicon {
         width: 100px;
         padding: 10px;
-        transition: transform 400ms ease-in-out;
-        :hover {
-          transform: translateY(-10px);
-        }
       }
       .msskills {
         width: 80px;
         height: 100px;
         padding: 10px;
-        transition: transform 400ms ease-in-out;
-        :hover {
-          transform: translateY(-10px);
-        }
       }
     }
   }

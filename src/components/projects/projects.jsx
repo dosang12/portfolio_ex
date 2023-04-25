@@ -5,7 +5,8 @@ import Project from "../Project";
 import PageHeader from "../PageHeader";
 
 const Portfolio = () => {
-  const ProjectList = () => projectData.map((project, i) => <Project key={i} id={project.id} title={project.title} technologies={project.technologies} image={project.image} color={project.bgcolor} github={project.github} deployed={project.deployed} description={project.description} />);
+  const ProjectList = () =>
+    projectData.map((project, i) => <Project key={i} id={project.id} title={project.title} technologies={project.technologies} image={project.image} color={project.bgcolor} github={project.github} deployed={project.deployed} description={project.description} page={project.page} />);
 
   return (
     <Container id="project">
