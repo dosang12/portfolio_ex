@@ -39,7 +39,7 @@ const Banner = styled.div`
   background-repeat: no-repeat;
   background-size: 40% auto;
   opacity: 1;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  transition: 0.3s, border-radius 0.3s, opacity 0.3s;
   height: 100vh;
   @media (max-width: 640px) {
     height: 100%;

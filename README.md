@@ -21,6 +21,7 @@
 부트스트랩도 사용.
 
 -npm i three
+-npm i dom
 -npm npm install @react-three/fiber
 -npm install @react-three/drei
 -npm install framer motion --save --legacy-peer-deps

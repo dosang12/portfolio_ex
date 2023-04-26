@@ -24,11 +24,11 @@ const Skills = () => {
                 LANGUAGE
               </span>
             </div>
-            <div className="row_second">HTML CSS</div>
             <div className="row_third">
               <img className="skillicon" src={html} alt="html" />
               <img className="skillicon" src={css} alt="css" />
             </div>
+            <div className="row_second">HTML CSS</div>
           </div>
 
           <div className="skillbox">
@@ -38,11 +38,11 @@ const Skills = () => {
                 <br /> FRAMEWORK
               </span>
             </div>
-            <div className="row_second">BOOTSTRAP</div>
             <div className="row_third">
               {" "}
               <img className="skillicon" src={bootstrap} alt="bootstrap" />
             </div>
+            <div className="row_second">BOOTSTRAP</div>
           </div>
           <div className="skillbox">
             <div className="row_first">
@@ -51,11 +51,11 @@ const Skills = () => {
                 LANGUAGE
               </span>
             </div>
-            <div className="row_second">JAVASCRIPT</div>
             <div className="row_third">
               {" "}
               <img className="skillicon" src={js} alt="js" />
             </div>
+            <div className="row_second">JAVASCRIPT</div>
           </div>
           <div className="skillbox">
             <div className="row_first">
@@ -64,11 +64,11 @@ const Skills = () => {
                 <br /> FRAMEWORK
               </span>
             </div>
-            <div className="row_second">REACT</div>
             <div className="row_third">
               {" "}
               <img className="skillicon" src={react} alt="react" />
             </div>
+            <div className="row_second">REACT</div>
           </div>
           <div className="skillbox">
             <div className="row_first">
@@ -77,11 +77,11 @@ const Skills = () => {
                 <br /> MANAGER
               </span>
             </div>
-            <div className="row_second">NPM</div>
             <div className="row_third">
               {" "}
               <img className="skillicon" src={npm} alt="npm" />
             </div>
+            <div className="row_second">NPM</div>
           </div>
           <div className="skillbox">
             <div className="row_first">
@@ -90,11 +90,11 @@ const Skills = () => {
                 <br /> MANAGEMENT
               </span>
             </div>
-            <div className="row_second">SQLite</div>
             <div className="row_third">
               {" "}
               <img className="skillicon" src={sqlite} alt="sqlite" />
             </div>
+            <div className="row_second">SQLite</div>
           </div>
           <div className="skillbox">
             <div className="row_first">
@@ -102,10 +102,10 @@ const Skills = () => {
                 VERSION <br /> CONTROL
               </span>
             </div>
-            <div className="row_second">GIT</div>
             <div className="row_third">
               <img className="skillicon" src={git} alt="git" />
             </div>
+            <div className="row_second">GIT</div>
           </div>
           <div className="skillbox">
             <div className="row_first">
@@ -114,12 +114,13 @@ const Skills = () => {
                 OFFICE
               </span>
             </div>
-            <div className="row_second">PPT EXCEL WORD</div>
+
             <div className="row_third">
               <img className="msskills" src={powerpoint} alt="powerpoint" />
               <img className="msskills" src={excel} alt="excel" />
               <img className="msskills" src={msword} alt="msword" />
             </div>
+            <div className="row_second">PPT EXCEL WORD</div>
           </div>
         </div>
       </Myskills>
@@ -164,17 +165,21 @@ const Myskills = styled.div`
       justify-content: center;
       span {
         margin-top: 10px;
+        color: #1c3f39;
         font-size: 20px;
         font-weight: 600;
         text-align: center;
+        padding-bottom: 15px;
       }
     }
     .row_second {
       display: flex;
       justify-content: center;
       padding: 10px;
+      font-size: 12px;
       font-weight: 500;
-
+      border-bottom: 8px solid rgb(211, 211, 169);
+      border-radius: 10px;
       span {
         text-align: center;
       }
@@ -182,8 +187,6 @@ const Myskills = styled.div`
     .row_third {
       display: flex;
       justify-content: center;
-      border-bottom: 8px solid rgb(211, 211, 169);
-      border-radius: 10px;
 
       span {
         text-align: center;

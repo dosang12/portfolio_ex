@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 const SideBar = () => {
-  const [bar, setBar] = useState(false);
+  const [bar] = useState(false);
   const [homeText, setHomeText] = useState("🏠");
   const [serviceText, setServiceText] = useState("🔧");
   const [projectText, setProjectText] = useState("💻");
@@ -85,7 +85,7 @@ const SideBar = () => {
           </a>
         </div>
         <div>
-          <a onClick={scrollToTop}>Top</a>
+          <span onClick={scrollToTop}>Top</span>
         </div>
       </div>
     </Nav>
@@ -116,6 +116,21 @@ const Nav = styled.div`
     text-align: center;
   }
   a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    color: #444;
+    padding: 15px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #444;
+      color: #fff;
+    }
+  }
+  span {
     text-decoration: none;
     display: inline-block;
     width: 100%;
