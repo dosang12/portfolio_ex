@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { MdAlternateEmail } from "react-icons/md";
-import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { BsFacebook, BsSlack } from "react-icons/bs";
-import { FiMail, FiPhoneCall } from "react-icons/fi";
+import { FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
+// import footImg from "../images/dosang3.png";
+import { faCss3, faGitAlt, faHtml5, faJsSquare, faReact, faBootstrap } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
   const scrollUp = () => {
@@ -54,7 +55,7 @@ const Footer = () => {
         </div>
         <div className="profiles">
           <Slide direction="left">
-            <h1>Check my profiles</h1>
+            <h1>Github, 이력서 살펴보기</h1>
           </Slide>
           <div className="icons">
             <Zoom>
@@ -93,31 +94,33 @@ const Footer = () => {
           </ArrowUp>
         </Fade>
       </Profile>
-      <Form>
-        <Slide direction="right">
-          <form>
-            <div className="name">
-              <span>
-                <CgProfile />
-              </span>
-              <input type="text" placeholder="Fullname..." />
-            </div>
-            <div className="email">
-              <span>
-                <MdAlternateEmail />
-              </span>
-              <input type="email" placeholder="Email..." />
-            </div>
-            <div className="message">
-              <span className="messageIcon">
-                <FiMail />
-              </span>
-              <textarea cols="30" rows="10" placeholder="Message..."></textarea>
-            </div>
-            <button>Submit</button>
-          </form>
-        </Slide>
-      </Form>
+
+      <div className="stage-cube-cont">
+        <div className="cubespinner">
+          <div className="face1">
+            <FontAwesomeIcon icon={faBootstrap} color="#4B8BBE" />
+          </div>
+          <div className="face2">
+            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+          </div>
+          <div className="face3">
+            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+          </div>
+          <div className="face4">
+            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+          </div>
+          <div className="face5">
+            <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+          </div>
+          <div className="face6">
+            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+          </div>
+        </div>
+      </div>
+
+      {/* <Slide direction="right">
+        <img className="footerImg" src={footImg} alt="profile" />
+      </Slide> */}
     </Container>
   );
 };
@@ -140,6 +143,91 @@ const Container = styled.div`
   @media (max-width: 650px) {
     flex-direction: column;
     gap: 3rem;
+  }
+  /* .footerImg {
+    width: 400px;
+  }
+   */
+  .stage-cube-cont {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    padding-top: 10%;
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+  }
+
+  .cubespinner {
+    animation-name: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+    margin-left: calc(50% - 100px);
+
+    div {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 1px solid #ccc;
+      background: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      font-size: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 20px 0px #ccc;
+    }
+
+    .face1 {
+      transform: translateZ(100px);
+      color: #dd0031;
+    }
+    .face2 {
+      transform: rotateY(90deg) translateZ(100px);
+      color: #f06529;
+    }
+    .face3 {
+      transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+      color: #28a4d9;
+    }
+    .face4 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+      color: #5ed4f4;
+    }
+    .face5 {
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+      color: #efd81d;
+    }
+    .face6 {
+      transform: rotateX(-90deg) translateZ(100px);
+      color: #ec4d28;
+    }
+  }
+
+  @keyframes spincube {
+    from,
+    to {
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16% {
+      transform: rotateY(-90deg);
+    }
+    33% {
+      transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    50% {
+      transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66% {
+      transform: rotateY(-270deg) rotateX(90deg);
+    }
+    83% {
+      transform: rotateX(90deg);
+    }
   }
 `;
 const Profile = styled.div`
@@ -226,58 +314,5 @@ const ArrowUp = styled.div`
     position: absolute;
     right: 3rem;
     top: 16rem;
-  }
-`;
-const Form = styled.div`
-  flex: 1;
-  h1 {
-    font-size: 1.3rem;
-    padding-bottom: 0.7rem;
-  }
-
-  form {
-    background-color: #f1f3f5;
-    padding: 0.8rem;
-    border-radius: 5px;
-    .name,
-    .email,
-    .message {
-      display: flex;
-      border: 1px solid #d3d3a9;
-      margin-bottom: 0.5rem;
-      input,
-      textarea {
-        width: 100%;
-        border: none;
-        outline: none;
-        color: #fff;
-        background-color: transparent;
-        padding: 1rem 0.5rem;
-      }
-      span {
-        background-color: #d3d3a9;
-        width: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .messageIcon {
-        align-items: flex-start;
-        padding-top: 0.5rem;
-      }
-    }
-
-    button {
-      width: 5rem;
-      height: 1.8rem;
-      background-color: #3d866b;
-      border: none;
-      border-radius: 5px;
-      filter: drop-shadow(0px 4px 5px #01be9551);
-      cursor: pointer;
-      :hover {
-        filter: drop-shadow(0px 6px 9px #01be9551);
-      }
-    }
   }
 `;
