@@ -24,7 +24,7 @@
   {
     "title": "Weather4u",
     "image": "./projectImages/weather4u.png",
-    "technologies": "JS | Bootstrap | CSS",
+    "technologies": "Bootstrap | JS | API | CSS",
     "description": "본인기여도 : 30%",
     "page": "담당페이지 : All",
     "github": "https://github.com/dosang12/team4_u.git",
@@ -45,8 +45,8 @@
   },
   {
     "title": "Personal Portfolio",
-    "image": "./projectImages/P1.png",
-    "technologies": "React | Framer | CSS | Bootstrap | Node",
+    "image": "./projectImages/personal.png",
+    "technologies": "React | Bootstrap | Node | CSS",
     "description": "본인기여도 : 100%",
     "page": "담당페이지 : All",
     "github": "https://github.com/dosang12/portfolio_ex.git",
