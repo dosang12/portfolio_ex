@@ -10,8 +10,8 @@ const Services = () => {
   return (
     <Container id="service">
       <Slide direction="down">
+        <h2>What I Do</h2>
         <h4>Introducing Myself</h4>
-        <h1>What I Do</h1>
       </Slide>
       <Cards>
         <Slide direction="left">
@@ -50,9 +50,14 @@ const Container = styled.div`
   @media (max-width: 840px) {
     width: 90%;
   }
-
-  h1 {
+  h4 {
+    text-align: center;
+    font-size: 16px;
     padding-top: 1rem;
+  }
+  h2 {
+    text-align: center;
+    font-size: 36px;
   }
 `;
 const Cards = styled.div`

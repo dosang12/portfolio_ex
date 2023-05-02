@@ -11,7 +11,7 @@ const ProfComponent = () => {
     <Container id="home">
       <Slide direction="left">
         <Texts>
-          <h4>안녕하십니까!</h4>
+          <h3>안녕하십니까!</h3>
           <h1>
             기획도 잘하는 프론트엔드! <br /> 상상 이상을 만드는 도상!
           </h1>
@@ -19,14 +19,14 @@ const ProfComponent = () => {
           <h3>신입 프론트엔드 / 기획자 윤도상입니다.</h3>
           <p>저는 개발자로서 창의적이고 도전적인 마인드로 항상 새로운 기술과 개발 방법을 탐구합니다.</p>
           <a href="#project">Go to Project!</a>
-          <Social>
+          {/* <Social>
             <p>Check out my</p>
             <div className="social-icons">
               <span> </span>
               <span> </span>
               <span> </span>
             </div>
-          </Social>
+          </Social> */}
         </Texts>
       </Slide>
       <Slide direction="right">
@@ -49,6 +49,7 @@ const Container = styled.div`
   width: 90%;
   max-width: 1152px;
   margin: 0 auto;
+  margin-top: 50px;
   z-index: 1;
   .css-2qfv45 {
     width: 60%;
@@ -82,11 +83,6 @@ const Texts = styled.div`
     width: 100%;
     padding-top: 3rem;
   }
-  h4 {
-    padding: 2rem 0;
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
   h1 {
     font-size: 2.5rem;
     letter-spacing: 2px;
@@ -95,12 +91,13 @@ const Texts = styled.div`
   h3 {
     font-weight: 500;
     font-size: 1.2rem;
-    padding-top: 2rem;
+    padding: 2rem 0;
   }
   p {
     padding: 1.2rem 1rem 1.2rem 0;
     font-weight: 400;
     word-break: keep-all;
+    font-size: 1.2rem;
   }
 
   a {
@@ -159,43 +156,27 @@ const Profile = styled.div`
     position: absolute;
     width: 150px;
     height: 150px;
-    left: -100px;
+    right: 0px;
     top: 10%;
     z-index: 99;
     @media (max-width: 1060px) {
-      right: -50px;
-    }
-    @media (max-width: 790px) {
-      position: absolute;
-      right: 150px;
-    }
-
-    @media (max-width: 660px) {
-      position: absolute;
-      left: 250px;
+      right: 0px;
     }
   }
   img {
     position: absolute;
-    right: -30px;
+    right: 100px;
     padding-top: 30px;
     width: 90%;
     transition: transform 400ms ease-in-out;
     margin: 0;
+    filter: drop-shadow(2px 4px 20px rgba(0, 0, 0, 0.4));
     @media (max-width: 1060px) {
       left: -50px;
     }
-    @media (max-width: 790px) {
-      width: 20rem;
-      left: -50px;
-    }
-
-    @media (max-width: 660px) {
-      width: 18rem;
-      position: relative;
-    }
 
     @media (max-width: 640px) {
+      position: relative;
       width: 15rem;
     }
   }

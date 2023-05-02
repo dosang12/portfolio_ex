@@ -1,4 +1,11 @@
 /* --- MOBILE STYLES --- */
+.klhXCX .pageTitle {
+  font-size: 36px;
+}
+.klhXCX .pageDescription {
+  font-size: 16px;
+  font-weight: 700;
+}
 
 .portfolio {
   display: flex;

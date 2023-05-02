@@ -20,8 +20,8 @@ const Skills = () => {
           <div className="skillbox">
             <div className="row_first">
               <span>
-                MARKUP/STYLING <br />
-                LANGUAGE
+                Markup/Styling <br />
+                Language
               </span>
             </div>
             <div className="row_third">
@@ -34,8 +34,8 @@ const Skills = () => {
           <div className="skillbox">
             <div className="row_first">
               <span>
-                CSS
-                <br /> FRAMEWORK
+                Css
+                <br /> Framework
               </span>
             </div>
             <div className="row_third">
@@ -47,8 +47,8 @@ const Skills = () => {
           <div className="skillbox">
             <div className="row_first">
               <span>
-                FRONT-END <br />
-                LANGUAGE
+                Front-end <br />
+                Language
               </span>
             </div>
             <div className="row_third">
@@ -60,8 +60,8 @@ const Skills = () => {
           <div className="skillbox">
             <div className="row_first">
               <span>
-                JAVASCRIPT
-                <br /> FRAMEWORK
+                Javascript
+                <br /> Framework
               </span>
             </div>
             <div className="row_third">
@@ -73,8 +73,8 @@ const Skills = () => {
           <div className="skillbox">
             <div className="row_first">
               <span>
-                PACKAGE
-                <br /> MANAGER
+                Package
+                <br /> Manager
               </span>
             </div>
             <div className="row_third">
@@ -86,8 +86,8 @@ const Skills = () => {
           <div className="skillbox">
             <div className="row_first">
               <span>
-                DATABASE
-                <br /> MANAGEMENT
+                Database
+                <br /> Management
               </span>
             </div>
             <div className="row_third">
@@ -99,19 +99,19 @@ const Skills = () => {
           <div className="skillbox">
             <div className="row_first">
               <span>
-                VERSION <br /> CONTROL
+                Version <br /> Control
               </span>
             </div>
             <div className="row_third">
               <img className="skillicon" src={git} alt="git" />
             </div>
-            <div className="row_second">GIT</div>
+            <div className="row_second">Git</div>
           </div>
           <div className="skillbox">
             <div className="row_first">
               <span>
                 MS <br />
-                OFFICE
+                Office
               </span>
             </div>
 
@@ -135,14 +135,17 @@ const Container = styled.div`
   max-width: 1152px;
   margin: 0 auto;
   padding: 4rem 0;
-
+  h2 {
+    font-size: 36px;
+    text-align: center;
+  }
   @media (max-width: 840px) {
     width: 90%;
   }
 `;
 
 const Myskills = styled.div`
-  margin: 2rem 0;
+  margin: 5rem 0;
   .skilltree {
     display: flex;
     flex-flow: wrap;
@@ -179,7 +182,12 @@ const Myskills = styled.div`
       font-size: 12px;
       font-weight: 500;
       border-bottom: 8px solid rgb(211, 211, 169);
+      margin-bottom: 80px;
       border-radius: 10px;
+      @media (max-width: 982px) {
+        margin-bottom: 30px;
+      }
+
       span {
         text-align: center;
       }
