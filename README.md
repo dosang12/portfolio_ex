@@ -26,3 +26,6 @@
 -npm install @react-three/drei
 -npm install framer motion --save --legacy-peer-deps
 -npm install slidein --save --legacy-peer-deps
+-npm install @fortawesome/free
+-npm i @fortawesome/react-font
+-npm install --save @fortaweso

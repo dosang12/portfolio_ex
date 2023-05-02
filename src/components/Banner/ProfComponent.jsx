@@ -159,14 +159,27 @@ const Profile = styled.div`
     position: absolute;
     width: 150px;
     height: 150px;
-    right: 0;
-    top: 30%;
+    left: -100px;
+    top: 10%;
     z-index: 99;
+    @media (max-width: 1060px) {
+      right: -50px;
+    }
+    @media (max-width: 790px) {
+      position: absolute;
+      right: 150px;
+    }
+
+    @media (max-width: 660px) {
+      position: absolute;
+      left: 250px;
+    }
   }
   img {
     position: absolute;
-    left: -150px;
-    width: 110%;
+    right: -30px;
+    padding-top: 30px;
+    width: 90%;
     transition: transform 400ms ease-in-out;
     margin: 0;
     @media (max-width: 1060px) {
