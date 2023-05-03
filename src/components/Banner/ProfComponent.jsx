@@ -18,7 +18,8 @@ const ProfComponent = () => {
           <br />
           <h3>신입 프론트엔드 / 기획자 윤도상입니다.</h3>
           <p>저는 개발자로서 창의적이고 도전적인 마인드로 항상 새로운 기술과 개발 방법을 탐구합니다.</p>
-          <a href="#project">Go to Project!</a>
+          <a href="#project">Go to 이력서!</a>
+          <a href="#project">Go to Github!</a>
           {/* <Social>
             <p>Check out my</p>
             <div className="social-icons">
@@ -49,7 +50,7 @@ const Container = styled.div`
   width: 90%;
   max-width: 1152px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 20px;
   z-index: 1;
   .css-2qfv45 {
     width: 60%;
@@ -104,14 +105,15 @@ const Texts = styled.div`
     display: inline-block;
     padding: 0.7rem 2rem;
     text-decoration: none;
-    margin-top: 3rem;
+    margin: 2rem 10px 10px 0;
+    border-radius: 20px;
     background-color: #1c3f39;
     border: none;
     color: #fff;
     font-weight: 500;
     transition: transform 400ms ease-in-out;
     :hover {
-      transform: translateY(-10px);
+      transform: translateY(-5px);
     }
   }
 `;
@@ -170,7 +172,7 @@ const Profile = styled.div`
     width: 90%;
     transition: transform 400ms ease-in-out;
     margin: 0;
-    filter: drop-shadow(2px 4px 20px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(2px 4px 60px rgba(0, 0, 0, 0.08));
     @media (max-width: 1060px) {
       left: -50px;
     }
