@@ -1,19 +1,36 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import myLogo from "../images/logo192.png";
+import Lottie from "react-lottie";
+import earth from "../Lottie/earth_commu.json";
+import hand from "../Lottie/hand_shake.json";
+import idea from "../Lottie/idea_circle.json";
+import loader from "../Lottie/Loader.json";
 
 const Header = () => {
   const [bar, setBar] = useState(false);
   const handleClick = () => {
     setBar(false);
   };
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: loader,
+    hand,
+    idea,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <Container bar={bar}>
       <Logo>
-        <span>
-          <img className="profileImg" src={myLogo} alt="profile" />
-        </span>
-        <h1>Do Sang Yoon</h1>
+        <a href="#">
+          <span>
+            <Lottie options={defaultOptions} height={100} width={100} />
+          </span>
+          Just Do
+        </a>
       </Logo>
       <Nav bar={bar}>
         <span>
@@ -58,7 +75,7 @@ const Container = styled.div`
   max-width: 1152px;
   width: 90%;
   margin: 0 auto;
-  padding: 1.5rem 0;
+  /* padding: 1.5rem 0; */
   position: relative;
   animation: header 500ms ease-in-out;
 
@@ -110,22 +127,15 @@ const Container = styled.div`
   }
 `;
 const Logo = styled.div`
-  display: flex;
-  align-items: center;
   gap: 0.5rem;
   z-index: 105;
-
-  span {
-    font-size: 1.8rem;
-  }
-  img {
-    width: 30px;
-    height: 30px;
-  }
-
-  h1 {
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
     font-weight: 600;
-    font-size: 1.2rem;
+    color: black;
   }
 `;
 const Nav = styled.div`

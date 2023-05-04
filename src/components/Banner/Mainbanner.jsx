@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { EarthCanvas } from "../canvas";
 import { slideIn } from "../utils/motion";
 
-const ProfComponent = () => {
+const Mainbanner = () => {
   return (
     <Container id="home">
       <Slide direction="left">
@@ -19,7 +19,7 @@ const ProfComponent = () => {
           <h3>신입 프론트엔드 / 기획자 윤도상입니다.</h3>
           <p>저는 개발자로서 창의적이고 도전적인 마인드로 항상 새로운 기술과 개발 방법을 탐구합니다.</p>
           <a href="#project">Go to 이력서!</a>
-          <a href="#project">Go to Github!</a>
+          <a href="https://github.com/dosang12">Go to 깃허브!</a>
           {/* <Social>
             <p>Check out my</p>
             <div className="social-icons">
@@ -42,7 +42,7 @@ const ProfComponent = () => {
   );
 };
 
-export default ProfComponent;
+export default Mainbanner;
 
 const Container = styled.div`
   display: flex;

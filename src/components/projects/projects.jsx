@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import projectData from "./projectsData.json";
-import Project from "../Project";
+import ProjectCard from "./ProjectCard";
 import PageHeader from "../PageHeader";
 
 const Portfolio = () => {
   const ProjectList = () =>
-    projectData.map((project, i) => <Project key={i} id={project.id} title={project.title} technologies={project.technologies} image={project.image} color={project.bgcolor} github={project.github} deployed={project.deployed} description={project.description} page={project.page} />);
+    projectData.map((project, i) => (
+      <ProjectCard key={i} id={project.id} title={project.title} technologies={project.technologies} image={project.image} color={project.bgcolor} github={project.github} deployed={project.deployed} description={project.description} page={project.page} member={project.member} />
+    ));
 
   return (
     <Container id="project">

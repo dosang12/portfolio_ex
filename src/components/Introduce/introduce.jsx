@@ -73,7 +73,7 @@ const Cards = styled.div`
     height: 100%;
     p {
       padding: auto 0;
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 `;
