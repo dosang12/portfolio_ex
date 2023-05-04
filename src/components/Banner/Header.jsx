@@ -29,7 +29,7 @@ const Header = () => {
           <span>
             <Lottie options={defaultOptions} height={100} width={100} />
           </span>
-          Just Do
+          Just Do!
         </a>
       </Logo>
       <Nav bar={bar}>

@@ -13,12 +13,12 @@ const Mainbanner = () => {
         <Texts>
           <h3>안녕하십니까!</h3>
           <h1>
-            기획도 잘하는 프론트엔드! <br /> 상상 이상을 만드는 도상!
+            기획도 잘하는 프론트엔드! <br /> 상<span className="first">상</span> 이<span className="second">상</span>을 만드는 도<span className="third">상</span>!
           </h1>
           <br />
           <h3>신입 프론트엔드 / 기획자 윤도상입니다.</h3>
           <p>저는 개발자로서 창의적이고 도전적인 마인드로 항상 새로운 기술과 개발 방법을 탐구합니다.</p>
-          <a href="#project">Go to 이력서!</a>
+          <a href="">Go to 이력서!</a>
           <a href="https://github.com/dosang12">Go to 깃허브!</a>
           {/* <Social>
             <p>Check out my</p>
@@ -80,6 +80,43 @@ const Texts = styled.div`
   word-break: break-all;
   padding-top: 8rem;
   width: 100%;
+  span {
+    display: inline-block;
+    position: relative;
+    font-size: 42px;
+    transition: transform 0.3s ease-in-out;
+    padding: 1px;
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+
+  .first {
+    animation-delay: 0s;
+  }
+
+  .second {
+    animation-delay: 0.5s;
+  }
+
+  .third {
+    animation-delay: 1s;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-2px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
   @media (max-width: 640px) {
     width: 100%;
     padding-top: 3rem;
