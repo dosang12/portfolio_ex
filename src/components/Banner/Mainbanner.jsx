@@ -107,13 +107,14 @@ const Texts = styled.div`
 
   @keyframes bounce {
     0% {
-      transform: translateY(0);
+      transform: rotate(0);
     }
     50% {
-      transform: translateY(-2px);
+      transform: rotate(5deg);
+      color: #005307;
     }
     100% {
-      transform: translateY(0);
+      transform: rotate(0);
     }
   }
 
@@ -151,42 +152,6 @@ const Texts = styled.div`
     transition: transform 400ms ease-in-out;
     :hover {
       transform: translateY(-5px);
-    }
-  }
-`;
-const Social = styled.div`
-  margin-top: 3rem;
-  display: flex;
-  align-items: center;
-  p {
-    font-size: 0.9rem;
-    @media (max-width: 690px) {
-      font-size: 0.7rem;
-    }
-  }
-
-  .social-icons {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    span {
-      width: 2.3rem;
-      height: 2rem;
-      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-      background-color: #1c3f39;
-      position: relative;
-      transition: transform 400ms ease-in-out;
-      :hover {
-        transform: rotate(360deg);
-      }
-    }
-
-    a {
-      color: #fff;
-      position: absolute;
-      top: 55%;
-      left: 50%;
-      transform: translate(-50%, -50%);
     }
   }
 `;

@@ -10,6 +10,7 @@ import git from "../images/git.png";
 import powerpoint from "../images/powerpoint.png";
 import excel from "../images/excel.png";
 import msword from "../images/msword.png";
+import { Slide } from "react-awesome-reveal";
 
 const Skills = () => {
   return (
