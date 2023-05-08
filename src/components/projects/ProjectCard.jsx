@@ -4,7 +4,7 @@ import Modal from "react-modal";
 import { useState } from "react";
 import closeModal from "../images/close.svg";
 
-const ProjectCard = ({ technologies, title, image, color, id, github, deployed, description, page, member }) => {
+const ProjectCard = ({ technologies, title, image, color, id, github, deployed, description, page, member, share }) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -63,6 +63,8 @@ const ProjectCard = ({ technologies, title, image, color, id, github, deployed, 
         <img src={closeModal} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close"></img>
         <h3 className="modalTitle">{title}</h3>
         <p className="projectDescription">{member}</p>
+        <p>본인기여도</p>
+        <p className="projectDescription">{share}</p>
         <p className="projectDescription">{description}</p>
         <p className="projectPage">{page}</p>
         <button className="btn" onClick={() => (window.location.href = github)}>

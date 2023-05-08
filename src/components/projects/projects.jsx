@@ -7,7 +7,20 @@ import PageHeader from "../PageHeader";
 const Portfolio = () => {
   const ProjectList = () =>
     projectData.map((project, i) => (
-      <ProjectCard key={i} id={project.id} title={project.title} technologies={project.technologies} image={project.image} color={project.bgcolor} github={project.github} deployed={project.deployed} description={project.description} page={project.page} member={project.member} />
+      <ProjectCard
+        key={i}
+        id={project.id}
+        title={project.title}
+        technologies={project.technologies}
+        image={project.image}
+        color={project.bgcolor}
+        github={project.github}
+        deployed={project.deployed}
+        description={project.description}
+        page={project.page}
+        member={project.member}
+        share={project.share}
+      />
     ));
 
   return (

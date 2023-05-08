@@ -1,15 +1,42 @@
-import React from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { BsFacebook, BsSlack } from "react-icons/bs";
-import { FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 // import footImg from "../images/dosang3.png";
 import Lottie from "react-lottie";
 import Rocket from "../Lottie/code_rocket.json";
 
+function copyToClipboard(data) {
+  navigator.clipboard
+    .writeText(data)
+    .then(() => {
+      console.log(`Copied ${data} to clipboard`);
+    })
+    .catch((error) => {
+      console.error(`Error copying ${data} to clipboard: `, error);
+    });
+}
+
 const Footer = () => {
+  const [email, setEmail] = useState("knight2671@gmail.com");
+  const [copySuccess, setCopySuccess] = useState(false);
+  function copyToClipboard(data) {
+    navigator.clipboard
+      .writeText(data)
+      .then(() => {
+        console.log(`Copied ${data} to clipboard`);
+        setCopySuccess(true);
+        setTimeout(() => {
+          setCopySuccess(false);
+        }, 1500);
+      })
+      .catch((error) => {
+        console.error(`Error copying ${data} to clipboard: `, error);
+      });
+  }
+
   const scrollUp = () => {
     window.scroll({
       top: 0,
@@ -28,11 +55,11 @@ const Footer = () => {
     <Container id="footer">
       <Profile>
         <Slide direction="left" delay={1}>
-          <h1>Contact me</h1>
+          <h2>Contact me</h2>
         </Slide>
         <div className="address">
           <Slide direction="left">
-            <h1>Address:</h1>
+            <h2>Address:</h2>
           </Slide>
           <Slide direction="left">
             <h3>서울시 노원구 노원로 564.</h3>
@@ -40,30 +67,27 @@ const Footer = () => {
         </div>
         <div className="contactLinks">
           <Slide direction="left">
-            <h1>Contact me directly:</h1>
+            <h2>Contact me directly:</h2>
           </Slide>
-          <div>
-            <span>
-              <FiPhoneCall />
-            </span>
-            <Slide direction="left">
-              <a href="tel:+4733378901">+47 010 0000 0000</a>
-            </Slide>
-          </div>
           <div>
             <Slide direction="left">
               <span>
                 <HiOutlineMailOpen />
               </span>
             </Slide>
-            <Slide>
-              <a href="mailto:miladamiri@gmail.com">knight2671@gmail.com</a>
+            <Slide direction="left">
+              <a href={`mailto:${email}`}>{email}</a>
+              <p>
+                <button onClick={() => copyToClipboard(email)} title={copySuccess ? "Copied!" : "Click to copy"}>
+                  {copySuccess ? "복사완료!" : "복사"}
+                </button>
+              </p>
             </Slide>
           </div>
         </div>
         <div className="profiles">
           <Slide direction="left">
-            <h1>Github, 이력서 살펴보기</h1>
+            <h2>Github, 이력서 살펴보기</h2>
           </Slide>
           <div className="icons">
             <Zoom>
@@ -138,7 +162,7 @@ const Profile = styled.div`
   flex: 1;
   .address {
     padding: 1rem 0;
-    h1 {
+    h2 {
       font-size: 1.2rem;
     }
 
@@ -152,7 +176,7 @@ const Profile = styled.div`
   }
 
   .contactLinks {
-    h1 {
+    h2 {
       font-size: 1.2rem;
       margin-bottom: 0.5rem;
     }
@@ -172,7 +196,7 @@ const Profile = styled.div`
   }
 
   .profiles {
-    h1 {
+    h2 {
       font-size: 1.2rem;
       padding: 1rem 0;
     }
