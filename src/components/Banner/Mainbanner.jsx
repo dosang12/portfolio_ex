@@ -18,8 +18,12 @@ const Mainbanner = () => {
           <br />
           <h3>신입 프론트엔드 / 기획자 윤도상입니다.</h3>
           <p>저는 개발자로서 창의적이고 도전적인 마인드로 항상 새로운 기술과 개발 방법을 탐구합니다.</p>
-          <a href="">Go to 이력서!</a>
-          <a href="https://github.com/dosang12">Go to 깃허브!</a>
+          <a href="https://drive.google.com/file/d/15PGAMnh5fsiyd7T9PHz2dYuuc9e4fNxB/view?usp=sharing" target="_blank">
+            Go to 이력서!
+          </a>
+          <a href="https://github.com/dosang12" target="_blank">
+            Go to 깃허브!
+          </a>
           {/* <Social>
             <p>Check out my</p>
             <div className="social-icons">

@@ -77,17 +77,23 @@ const Footer = () => {
             </Slide>
             <Slide direction="left">
               <a href={`mailto:${email}`}>{email}</a>
-              <p>
-                <button onClick={() => copyToClipboard(email)} title={copySuccess ? "Copied!" : "Click to copy"}>
-                  {copySuccess ? "복사완료!" : "복사"}
-                </button>
-              </p>
+
+              <button onClick={() => copyToClipboard(email)} title={copySuccess ? "Copied!" : "Click to copy"}>
+                {copySuccess ? "복사완료!" : "복사"}
+              </button>
             </Slide>
           </div>
         </div>
         <div className="profiles">
           <Slide direction="left">
-            <h2>Github, 이력서 살펴보기</h2>
+            <p>
+              <a href="https://github.com/dosang12" target="_blank">
+                깃허브
+              </a>
+              <a href="https://drive.google.com/file/d/15PGAMnh5fsiyd7T9PHz2dYuuc9e4fNxB/view?usp=sharing" target="_blank">
+                이력서
+              </a>
+            </p>
           </Slide>
           <div className="icons">
             <Zoom>
@@ -185,10 +191,21 @@ const Profile = styled.div`
       display: flex;
       align-items: center;
       gap: 0.5rem;
+
+      button {
+        padding: 0 10px;
+        border-radius: 10px;
+        :hover {
+          cursor: pointer;
+          transition: 0.2s;
+          background-color: orange;
+        }
+      }
       a {
         text-decoration: none;
         color: lightgray;
         :hover {
+          transition: 0.5s;
           color: orange;
         }
       }
@@ -199,6 +216,23 @@ const Profile = styled.div`
     h2 {
       font-size: 1.2rem;
       padding: 1rem 0;
+    }
+    p {
+      a {
+        text-decoration: none;
+        color: black;
+        padding: 5px 30px;
+        border: 3px solid black;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 20px 10px 20px 0;
+        font-weight: 500;
+        :hover {
+          background-color: orange;
+          font-weight: 600;
+          transition: 0.5s;
+        }
+      }
     }
 
     .icons {
