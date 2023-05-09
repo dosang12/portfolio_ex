@@ -20,6 +20,8 @@ const Portfolio = () => {
         page={project.page}
         member={project.member}
         share={project.share}
+        pdf={project.pdf}
+        info={project.info}
       />
     ));
 

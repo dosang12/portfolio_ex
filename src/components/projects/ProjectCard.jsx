@@ -4,7 +4,7 @@ import Modal from "react-modal";
 import { useState } from "react";
 import closeModal from "../images/close.svg";
 
-const ProjectCard = ({ technologies, title, image, color, id, github, deployed, description, page, member, share }) => {
+const ProjectCard = ({ technologies, title, image, color, id, github, deployed, description, page, member, share, pdf, info }) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -30,6 +30,7 @@ const ProjectCard = ({ technologies, title, image, color, id, github, deployed, 
           </p>
           <h3 className="projectTitle">{title}</h3>
           <span className="viewWork">View Work &#8594;</span>
+          <span className="viewWork">{info}</span>
         </div>
         <div className="imageContainer col-6 d-flex align-items-center justify-content-center">
           <img src={image} alt="Laptop displaying the application" />
@@ -65,13 +66,18 @@ const ProjectCard = ({ technologies, title, image, color, id, github, deployed, 
         <p className="projectDescription">{member}</p>
         <p>본인기여도</p>
         <p className="projectDescription">{share}</p>
+        <p>기술설명</p>
         <p className="projectDescription">{description}</p>
+        <p>담당페이지</p>
         <p className="projectPage">{page}</p>
         <button className="btn" onClick={() => (window.location.href = github)}>
           GitHub Repo
         </button>
         <button className="btn" onClick={() => (window.location.href = deployed)}>
           Live Link
+        </button>
+        <button className="btn" onClick={() => (window.location.href = pdf)}>
+          기획서
         </button>
       </Modal>
     </motion.div>

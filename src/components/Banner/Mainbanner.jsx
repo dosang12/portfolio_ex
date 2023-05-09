@@ -24,6 +24,7 @@ const Mainbanner = () => {
           <a href="https://github.com/dosang12" target="_blank">
             Go to 깃허브!
           </a>
+          <a href="#project">Go to 기획서!</a>
           {/* <Social>
             <p>Check out my</p>
             <div className="social-icons">
@@ -145,7 +146,7 @@ const Texts = styled.div`
 
   a {
     display: inline-block;
-    padding: 0.7rem 2rem;
+    padding: 0.7rem 1.5rem;
     text-decoration: none;
     margin: 2rem 10px 10px 0;
     border-radius: 20px;
