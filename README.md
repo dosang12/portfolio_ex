@@ -1,6 +1,7 @@
 ## Live page
 
 [포트폴리오 페이지](https://portfolio-hgtwxu4vw-dosang12.vercel.app/)
+React 기반 웹 포트폴리오 입니다.
 
 ## Features
 
