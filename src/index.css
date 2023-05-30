@@ -102,6 +102,14 @@ body {
   background-color: #009e66;
   border-radius: 20px;
 }
+.closeModal {
+  margin-left: 250px;
+  margin-top: -20px;
+}
+
+.closeModal:hover {
+  filter: brightness(100);
+}
 
 .btn {
   color: #f9f9f9;

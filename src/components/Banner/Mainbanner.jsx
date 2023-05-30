@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { EarthCanvas } from "../canvas";
 import { slideIn } from "../utils/motion";
 import Modal from "react-modal";
-import closeModal from "../images/close.svg";
+import closeModalIcon from "../images/close.svg";
 
 const Mainbanner = () => {
   Modal.setAppElement("#root");
@@ -62,7 +62,7 @@ const Mainbanner = () => {
               },
             }}
           >
-            <img src={closeModal} className="closeMenu closeModal" onClick={closeModal} alt="Close"></img>
+            <img src={closeModalIcon} className="closeMenu closeModal" onClick={closeModal} alt="Close"></img>
             <h2>기획서</h2>
             <p className="pdfinfo">아래 기획서는 팀프로젝트 이후 따로 제작한 결과물 입니다.</p>
 
