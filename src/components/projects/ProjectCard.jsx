@@ -4,7 +4,7 @@ import Modal from "react-modal";
 import { useState } from "react";
 import closeModal from "../images/close.svg";
 
-const ProjectCard = ({ technologies, title, image, color, id, github, deployed, description, page, member, share, pdf, info }) => {
+const ProjectCard = ({ technologies, title, image, color, id, github, deployed, description, page, member, share, info }) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -75,9 +75,6 @@ const ProjectCard = ({ technologies, title, image, color, id, github, deployed, 
         </button>
         <button className="btn" onClick={() => (window.location.href = deployed)}>
           Live Link
-        </button>
-        <button className="btn" onClick={() => (window.location.href = pdf)}>
-          기획서
         </button>
       </Modal>
     </motion.div>

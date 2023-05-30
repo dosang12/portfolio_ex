@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Slide } from "react-awesome-reveal";
 import myImage from "../images/dosang2.png";
 import { motion } from "framer-motion";
 import { EarthCanvas } from "../canvas";
 import { slideIn } from "../utils/motion";
+import Modal from "react-modal";
+import closeModal from "../images/close.svg";
 
 const Mainbanner = () => {
+  Modal.setAppElement("#root");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <Container id="home">
       <Slide direction="left">
@@ -24,15 +36,46 @@ const Mainbanner = () => {
           <a href="https://github.com/dosang12" target="_blank">
             Go to 깃허브!
           </a>
-          <a href="#project">Go to 기획서!</a>
-          {/* <Social>
-            <p>Check out my</p>
-            <div className="social-icons">
-              <span> </span>
-              <span> </span>
-              <span> </span>
-            </div>
-          </Social> */}
+          <button onClick={openModal}>Go to 기획서!</button>
+          <Modal
+            isOpen={isModalOpen}
+            onRequestClose={closeModal}
+            style={{
+              content: {
+                backgroundColor: "#101010",
+                color: "#9f9f9f",
+                padding: "60px",
+                display: "flex",
+                flexDirection: "column",
+                borderRadius: "20px",
+                lineHeight: "1.5rem",
+                wordBreak: "keep-all",
+                width: "400px",
+                textAlign: "center",
+                top: "50%",
+                left: "50%",
+                right: "auto",
+                bottom: "auto",
+                marginRight: "-50%",
+                transform: "translate(-50%, -50%)",
+                zIndex: "999",
+              },
+            }}
+          >
+            <img src={closeModal} className="closeMenu closeModal" onClick={closeModal} alt="Close"></img>
+            <h2>기획서</h2>
+            <p className="pdfinfo">아래 기획서는 팀프로젝트 이후 따로 제작한 결과물 입니다.</p>
+
+            <a href="https://drive.google.com/file/d/17Jkppalt_uuc9amGZCFqLhDl4IN9BLRd/view?usp=share_link" target="_blank" className="pdflink">
+              project1_K-water 기획서
+            </a>
+            <a href="https://drive.google.com/file/d/1FXCm6w0piIo3EtOaOouaOTA6Gh7CTAic/view?usp=share_link" target="_blank" className="pdflink">
+              project2_Weather4u 기획서
+            </a>
+            <a href="https://drive.google.com/file/d/1xjr7iOKc11xt7ERF8T-Fs2l1YHp4Vg53/view?usp=share_link" target="_blank" className="pdflink">
+              project3_4niture 기획서
+            </a>
+          </Modal>
         </Texts>
       </Slide>
       <Slide direction="right">
@@ -109,7 +152,6 @@ const Texts = styled.div`
   .third {
     animation-delay: 1s;
   }
-
   @keyframes bounce {
     0% {
       transform: rotate(0);
@@ -155,6 +197,24 @@ const Texts = styled.div`
     color: #fff;
     font-weight: 500;
     transition: transform 400ms ease-in-out;
+    font-size: 16px;
+    :hover {
+      transform: translateY(-5px);
+    }
+  }
+  button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    margin: 2rem 10px 10px 0;
+    border-radius: 20px;
+    background-color: #1c3f39;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    transition: transform 400ms ease-in-out;
+    font-size: 16px;
+    cursor: pointer;
     :hover {
       transform: translateY(-5px);
     }

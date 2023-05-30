@@ -10,10 +10,9 @@
     "page": "제품 상세 페이지, DB 작성, showroom, Main 구성, 아이디어 기획",
     "github": "https://github.com/dosang12/react_project_1_front.git",
     "deployed": "https://react-project-1-front-juxbq88ee-dosang12.vercel.app/",
-    "pdf": "https://drive.google.com/file/d/1scVGBFayMEDEWnojy_eyeKXNwqo37e4s/view?usp=sharing",
     "bgcolor": "#6c4bf4",
     "id": "1",
-    "info": "깃 허브, 구현 페이지, 기획서"
+    "info": "깃 허브, 구현 페이지"
   },
   {
     "title": "4NITURE-App",
@@ -40,10 +39,9 @@
     "page": "담당페이지 : 공동구매, 로그인, 메인배너, 사이드바, 아이디어 기획",
     "github": "https://github.com/dosang12/team4_u.git",
     "deployed": "https://dosang12.github.io/team4_u/",
-    "pdf": "https://drive.google.com/file/d/1_aQUH9qRW839fYOZcW7iTIP0cuRL8573/view?usp=sharing",
     "bgcolor": "#29cbe0",
     "id": "3",
-    "info": "깃 허브, 구현 페이지, 기획서"
+    "info": "깃 허브, 구현 페이지"
   },
   {
     "title": "수자원공사 리뉴얼",
@@ -55,10 +53,9 @@
     "period": "3주",
     "github": "https://github.com/dosang12/frontend_project_1.git",
     "deployed": "https://dosang12.github.io/frontend_project_1/",
-    "pdf": "https://drive.google.com/file/d/1IH03xegrsD-AWSZ28qvTEQBzLfjB1cpS/view?usp=sharing",
     "bgcolor": "#f37737",
     "id": "4",
-    "info": "깃 허브, 구현 페이지, 기획서"
+    "info": "깃 허브, 구현 페이지"
   },
   {
     "title": "Personal Portfolio",
@@ -88,6 +85,6 @@
     "deployed": "#",
     "bgcolor": "#3e67ff",
     "id": "6",
-    "info": "깃 허브, 구현 페이지, 기획서"
+    "info": "깃 허브, 구현 페이지"
   }
 ]
