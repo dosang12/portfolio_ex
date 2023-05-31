@@ -66,13 +66,13 @@ const Mainbanner = () => {
             <h2>기획서</h2>
             <p className="pdfinfo">아래 기획서는 팀프로젝트 이후 따로 제작한 결과물 입니다.</p>
 
-            <a href="https://drive.google.com/file/d/17Jkppalt_uuc9amGZCFqLhDl4IN9BLRd/view?usp=share_link" target="_blank" className="pdflink">
+            <a href="https://drive.google.com/file/d/1LNn54lPQov67ky4bwux13R_JHVdNzDjD/view?usp=share_link" target="_blank" className="pdflink">
               project1_K-water 기획서
             </a>
-            <a href="https://drive.google.com/file/d/1FXCm6w0piIo3EtOaOouaOTA6Gh7CTAic/view?usp=share_link" target="_blank" className="pdflink">
+            <a href="https://drive.google.com/file/d/1TMmRD6meeIYBFfjXvxrqXKfk3o9ch6I2/view?usp=share_link" target="_blank" className="pdflink">
               project2_Weather4u 기획서
             </a>
-            <a href="https://drive.google.com/file/d/1xjr7iOKc11xt7ERF8T-Fs2l1YHp4Vg53/view?usp=share_link" target="_blank" className="pdflink">
+            <a href="https://drive.google.com/file/d/1UTN3gNiN_VZp7goWrC62ufGcBQRzYrEo/view?usp=share_link" target="_blank" className="pdflink">
               project3_4niture 기획서
             </a>
           </Modal>
