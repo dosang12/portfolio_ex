@@ -64,16 +64,16 @@ const Mainbanner = () => {
           >
             <img src={closeModalIcon} className="closeMenu closeModal" onClick={closeModal} alt="Close"></img>
             <h2>기획서</h2>
-            <p className="pdfinfo">아래 기획서는 팀프로젝트 이후 따로 제작한 결과물 입니다.</p>
+            <p className="pdfinfo">아래 기획서는 회사명, 주요페이지명이 마스킹되어 있습니다.</p>
 
-            <a href="https://drive.google.com/file/d/1LNn54lPQov67ky4bwux13R_JHVdNzDjD/view?usp=share_link" target="_blank" className="pdflink">
-              project1_K-water 기획서
+            <a href="https://drive.google.com/file/d/16eJOvfxHDv7M7rF5hKWCsfkcHsv4-9a_/view?usp=sharing" target="_blank" className="pdflink">
+              FO Contact us 기획서
             </a>
-            <a href="https://drive.google.com/file/d/1TMmRD6meeIYBFfjXvxrqXKfk3o9ch6I2/view?usp=share_link" target="_blank" className="pdflink">
-              project2_Weather4u 기획서
+            <a href="https://drive.google.com/file/d/16eJOvfxHDv7M7rF5hKWCsfkcHsv4-9a_/view?usp=sharing" target="_blank" className="pdflink">
+              추가 기획서 준비중입니다.
             </a>
-            <a href="https://drive.google.com/file/d/1UTN3gNiN_VZp7goWrC62ufGcBQRzYrEo/view?usp=share_link" target="_blank" className="pdflink">
-              project3_4niture 기획서
+            <a href="https://drive.google.com/file/d/16eJOvfxHDv7M7rF5hKWCsfkcHsv4-9a_/view?usp=sharing" target="_blank" className="pdflink">
+              추가 기획서 준비중입니다.
             </a>
           </Modal>
         </Texts>

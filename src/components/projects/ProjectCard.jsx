@@ -63,17 +63,17 @@ const ProjectCard = ({ technologies, title, image, color, id, github, deployed, 
       >
         <img src={closeModal} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close"></img>
         <h3 className="modalTitle">{title}</h3>
-        <p className="projectDescription">{member}</p>
-        <p>본인기여도</p>
-        <p className="projectDescription">{share}</p>
-        <p>기술설명</p>
-        <p className="projectDescription">{description}</p>
-        <p>담당페이지</p>
-        <p className="projectPage">{page}</p>
-        <button className="btn" onClick={() => (window.location.href = github)}>
+        <p className="projectDescription" style={{ marginBottom: "20px" }}>{member}</p>
+        <p style={{ fontSize: "20px", fontWeight: "bold" }}>본인기여도</p>
+        <p className="projectDescription" style={{ marginBottom: "20px" }}>{share}</p>
+        <p style={{ fontSize: "20px", fontWeight: "bold" }}>요약</p>
+        <p className="projectDescription" style={{ marginBottom: "20px" }}>{description}</p>
+        <p style={{ fontSize: "20px", fontWeight: "bold" }}>담당페이지</p>
+       <p className="projectPage" style={{ marginBottom: "20px" }}>{page}</p>
+        {/* <button className="btn" onClick={() => (window.location.href = github)}>
           GitHub Repo
-        </button>
-        <button className="btn" onClick={() => (window.location.href = deployed)}>
+        </button> */}
+        <button className="btn" onClick={() => window.open(deployed, "_blank")}>
           Live Link
         </button>
       </Modal>

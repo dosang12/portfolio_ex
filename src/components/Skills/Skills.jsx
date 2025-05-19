@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import html from "../images/html.png";
 import css from "../images/css.png";
-import bootstrap from "../images/bootstrap.png";
+import adsp from "../images/adsp.png";
 import js from "../images/js.png";
 import react from "../images/react.png";
 import npm from "../images/npm.png";
-import sqlite from "../images/sqlite.png";
 import git from "../images/git.png";
 import powerpoint from "../images/powerpoint.png";
 import excel from "../images/excel.png";
 import msword from "../images/msword.png";
+import figma from "../images/figma.webp";
 import { Slide } from "react-awesome-reveal";
 
 const Skills = () => {
@@ -18,7 +18,48 @@ const Skills = () => {
       <h2>My Skills</h2>
       <Myskills>
         <div className="skilltree">
-          <div className="skillbox">
+             <div className="skillbox">
+            <div className="row_first">
+              <span>
+                MS <br />
+                Office
+              </span>
+            </div>
+
+            <div className="row_third">
+              <img className="msskills" src={powerpoint} alt="powerpoint" />
+              <img className="msskills" src={excel} alt="excel" />
+              <img className="msskills" src={msword} alt="msword" />
+            </div>
+            <div className="row_second">PPT EXCEL WORD</div>
+          </div>
+              <div className="skillbox">
+            <div className="row_first">
+              <span>
+                Design
+                <br /> Tool
+              </span>
+            </div>
+            <div className="row_third">
+              {" "}
+              <img className="skillicon" src={figma} alt="figma" />
+            </div>
+            <div className="row_second">Figma</div>
+          </div>
+                    <div className="skillbox">
+            <div className="row_first">
+              <span>
+                데이터분석
+                <br /> 준전문가
+              </span>
+            </div>
+            <div className="row_third">
+              {" "}
+              <img className="skillicon" src={adsp} alt="adsp" />
+            </div>
+            <div className="row_second">6월 취득예정</div>
+          </div>
+           <div className="skillbox">
             <div className="row_first">
               <span>
                 Markup/Styling <br />
@@ -30,20 +71,6 @@ const Skills = () => {
               <img className="skillicon" src={css} alt="css" />
             </div>
             <div className="row_second">HTML CSS</div>
-          </div>
-
-          <div className="skillbox">
-            <div className="row_first">
-              <span>
-                Css
-                <br /> Framework
-              </span>
-            </div>
-            <div className="row_third">
-              {" "}
-              <img className="skillicon" src={bootstrap} alt="bootstrap" />
-            </div>
-            <div className="row_second">BOOTSTRAP</div>
           </div>
           <div className="skillbox">
             <div className="row_first">
@@ -87,19 +114,6 @@ const Skills = () => {
           <div className="skillbox">
             <div className="row_first">
               <span>
-                Database
-                <br /> Management
-              </span>
-            </div>
-            <div className="row_third">
-              {" "}
-              <img className="skillicon" src={sqlite} alt="sqlite" />
-            </div>
-            <div className="row_second">SQLite</div>
-          </div>
-          <div className="skillbox">
-            <div className="row_first">
-              <span>
                 Version <br /> Control
               </span>
             </div>
@@ -108,21 +122,7 @@ const Skills = () => {
             </div>
             <div className="row_second">Git</div>
           </div>
-          <div className="skillbox">
-            <div className="row_first">
-              <span>
-                MS <br />
-                Office
-              </span>
-            </div>
-
-            <div className="row_third">
-              <img className="msskills" src={powerpoint} alt="powerpoint" />
-              <img className="msskills" src={excel} alt="excel" />
-              <img className="msskills" src={msword} alt="msword" />
-            </div>
-            <div className="row_second">PPT EXCEL WORD</div>
-          </div>
+       
         </div>
       </Myskills>
     </Container>
