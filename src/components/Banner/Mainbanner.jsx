@@ -25,12 +25,12 @@ const Mainbanner = () => {
         <Texts>
           <h3>안녕하십니까!</h3>
           <h1>
-            기획도 잘하는 프론트엔드! <br /> 상<span className="first">상</span> 이<span className="second">상</span>을 만드는 도<span className="third">상</span>!
+            프론트엔드 교육 기반의 기획자! <br /> 상<span className="first">상</span> 이<span className="second">상</span>을 만드는 도<span className="third">상</span>!
           </h1>
           <br />
           <h3> 프론트엔드 기반의 기획자 윤도상입니다.</h3>
-          <p>저는 개발자로서 창의적이고 도전적인 마인드로 항상 새로운 기술과 개발 방법을 탐구합니다.</p>
-          <a href="https://drive.google.com/file/d/15PGAMnh5fsiyd7T9PHz2dYuuc9e4fNxB/view?usp=sharing" target="_blank">
+          <p>저는 기획자자로서 창의적이고 도전적인 마인드로 항상 새로운 기술을 탐구하고 열린 마인드로 팀원들과 커뮤니케이션 합니다.</p>
+          <a href="https://drive.google.com/file/d/1SDudhNtX-U9Au9TnuqbHA8XWYSkiyI9i/view?usp=drive_link" target="_blank">
             Go to 이력서!
           </a>
           <a href="https://github.com/dosang12" target="_blank">
