@@ -33,8 +33,8 @@ const Mainbanner = () => {
           <a href="https://drive.google.com/file/d/1SDudhNtX-U9Au9TnuqbHA8XWYSkiyI9i/view?usp=drive_link" target="_blank">
             Go to 이력서!
           </a>
-          <a href="https://github.com/dosang12" target="_blank">
-            Go to 깃허브!
+          <a href="https://drive.google.com/file/d/1d_ZyfZUS1_k4klc1lKPhk74aCGOJ6Q39/view?usp=sharing" target="_blank">
+            Go to 경력기술서!
           </a>
           <button onClick={openModal}>Go to 기획서!</button>
           <Modal
