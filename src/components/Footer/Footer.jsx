@@ -90,22 +90,24 @@ const Footer = () => {
               <a href="https://github.com/dosang12" target="_blank">
                 깃허브
               </a>
-              <a href="https://drive.google.com/file/d/15PGAMnh5fsiyd7T9PHz2dYuuc9e4fNxB/view?usp=sharing" target="_blank">
+              <a href="https://drive.google.com/file/d/1SDudhNtX-U9Au9TnuqbHA8XWYSkiyI9i/view?usp=drive_link" target="_blank">
                 이력서
+              </a><a href="https://drive.google.com/file/d/1d_ZyfZUS1_k4klc1lKPhk74aCGOJ6Q39/view?usp=sharing" target="_blank">
+                경력기술서
               </a>
             </p>
           </Slide>
           <div className="icons">
             <Zoom>
               <span>
-                <a href="/">
+                <a href="https://github.com/dosang12" target="_blank">
                   <AiFillGithub />
                 </a>
               </span>
             </Zoom>
-            <Zoom>
+            {/* <Zoom>
               <span>
-                <a href="/">
+                <a href="/" target="_blank">
                   <AiFillLinkedin />
                 </a>
               </span>
@@ -123,7 +125,7 @@ const Footer = () => {
                   <BsSlack />
                 </a>
               </span>
-            </Zoom>
+            </Zoom> */}
           </div>
         </div>
         <Fade>
