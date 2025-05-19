@@ -29,7 +29,7 @@ const Mainbanner = () => {
           </h1>
           <br />
           <h3> 프론트엔드 기반의 기획자 윤도상입니다.</h3>
-          <p>저는 기획자자로서 창의적이고 도전적인 마인드로 항상 새로운 기술을 탐구하고 열린 마인드로 팀원들과 커뮤니케이션 합니다.</p>
+          <p>저는 기획자로서 창의적이고 도전적인 마인드로 항상 새로운 기술을 탐구하고 열린 마인드로 팀원들과 커뮤니케이션 합니다.</p>
           <a href="https://drive.google.com/file/d/1SDudhNtX-U9Au9TnuqbHA8XWYSkiyI9i/view?usp=drive_link" target="_blank">
             Go to 이력서!
           </a>
