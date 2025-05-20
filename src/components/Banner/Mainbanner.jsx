@@ -25,10 +25,10 @@ const Mainbanner = () => {
         <Texts>
           <h3>안녕하십니까!</h3>
           <h1>
-            프론트엔드 교육 기반의 기획자! <br /> 상<span className="first">상</span> 이<span className="second">상</span>을 만드는 도<span className="third">상</span>!
+            프론트엔드 기반의 기획자! <br /> 상<span className="first">상</span> 이<span className="second">상</span>을 만드는 도<span className="third">상</span>!
           </h1>
           <br />
-          <h3> 프론트엔드 기반의 기획자 윤도상입니다.</h3>
+          <h3> 개발과 사용자 경험 사이, 균형을 설계하는 기획자 윤도상입니다.</h3>
           <p>저는 기획자로서 창의적이고 도전적인 마인드로 항상 새로운 기술을 탐구하고 열린 마인드로 팀원들과 커뮤니케이션 합니다.</p>
           <a href="https://drive.google.com/file/d/1SDudhNtX-U9Au9TnuqbHA8XWYSkiyI9i/view?usp=drive_link" target="_blank">
             Go to 이력서!
@@ -66,7 +66,7 @@ const Mainbanner = () => {
             <h2>기획서</h2>
             <p className="pdfinfo">아래 기획서는 회사명, 주요페이지명이 마스킹되어 있습니다.</p>
 
-            <a href="https://drive.google.com/file/d/16eJOvfxHDv7M7rF5hKWCsfkcHsv4-9a_/view?usp=sharing" target="_blank" className="pdflink">
+            <a href="https://drive.google.com/file/d/1TUJa7mRDllvF3agxP727fCF2V9MdmSfQ/view?usp=sharing" target="_blank" className="pdflink">
               FO Contact us 기획서
             </a>
             <a href="https://drive.google.com/file/d/16eJOvfxHDv7M7rF5hKWCsfkcHsv4-9a_/view?usp=sharing" target="_blank" className="pdflink">
