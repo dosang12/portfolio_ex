@@ -4,7 +4,7 @@ import css from "../images/css.png";
 import adsp from "../images/adsp.png";
 import js from "../images/js.png";
 import react from "../images/react.png";
-import npm from "../images/npm.png";
+import ai from "../images/ai.png";
 import git from "../images/git.png";
 import powerpoint from "../images/powerpoint.png";
 import excel from "../images/excel.png";
@@ -59,6 +59,19 @@ const Skills = () => {
             </div>
             <div className="row_second">6월 결과발표 예정</div>
           </div>
+            <div className="skillbox">
+            <div className="row_first">
+              <span>
+                인공지능
+                <br /> 활용
+              </span>
+            </div>
+            <div className="row_third">
+              {" "}
+              <img className="skillicon" src={ai} alt="ai" />
+            </div>
+            <div className="row_second">GPT, 젠스파크, perplexity 유료구독 중</div>
+          </div>
            <div className="skillbox">
             <div className="row_first">
               <span>
@@ -97,19 +110,6 @@ const Skills = () => {
               <img className="skillicon" src={react} alt="react" />
             </div>
             <div className="row_second">REACT</div>
-          </div>
-          <div className="skillbox">
-            <div className="row_first">
-              <span>
-                Package
-                <br /> Manager
-              </span>
-            </div>
-            <div className="row_third">
-              {" "}
-              <img className="skillicon" src={npm} alt="npm" />
-            </div>
-            <div className="row_second">NPM</div>
           </div>
           <div className="skillbox">
             <div className="row_first">
