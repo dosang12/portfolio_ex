@@ -57,7 +57,7 @@ const Skills = () => {
               {" "}
               <img className="skillicon" src={adsp} alt="adsp" />
             </div>
-            <div className="row_second">6월 결과발표 예정</div>
+            <div className="row_second">2025-06 합격</div>
           </div>
             <div className="skillbox">
             <div className="row_first">
