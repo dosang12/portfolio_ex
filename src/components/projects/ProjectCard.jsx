@@ -4,7 +4,20 @@ import Modal from "react-modal";
 import { useState } from "react";
 import closeModal from "../images/close.svg";
 
-const ProjectCard = ({ technologies, title, image, color, id, github, deployed, description, page, member, share, info }) => {
+const ProjectCard = ({
+  technologies,
+  title,
+  image,
+  color,
+  id,
+  github,
+  deployed,
+  description,
+  page,
+  member,
+  share,
+  info,
+}) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -22,8 +35,19 @@ const ProjectCard = ({ technologies, title, image, color, id, github, deployed, 
   const handleCloseModal = () => setShowModal(false);
 
   return (
-    <motion.div ref={ref} className="col-sm-12 col-lg-6" variants={variants} initial="hidden" animate={inView ? "visible" : "hidden"} transition={{ duration: 0.4, ease: "easeInOut" }}>
-      <div style={{ backgroundColor: color }} className="projectCard d-flex align-items-center justify-content-center p-5" onClick={handleOpenModal}>
+    <motion.div
+      ref={ref}
+      className="col-sm-12 col-lg-6"
+      variants={variants}
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      transition={{ duration: 0.4, ease: "easeInOut" }}
+    >
+      <div
+        style={{ backgroundColor: color }}
+        className="projectCard d-flex align-items-center justify-content-center p-5"
+        onClick={handleOpenModal}
+      >
         <div className="textWrap col-6 d-flex flex-column justify-content-center align-items-center m-5">
           <p className="tech">
             <em>{technologies}</em>
@@ -61,21 +85,37 @@ const ProjectCard = ({ technologies, title, image, color, id, github, deployed, 
           },
         }}
       >
-        <img src={closeModal} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close"></img>
+        <img
+          src={closeModal}
+          className="closeMenu closeModal"
+          onClick={handleCloseModal}
+          alt="Close"
+        />
         <h3 className="modalTitle">{title}</h3>
-        <p className="projectDescription" style={{ marginBottom: "20px" }}>{member}</p>
+        <p className="projectDescription" style={{ marginBottom: "20px" }}>
+          {member}
+        </p>
         <p style={{ fontSize: "20px", fontWeight: "bold" }}>본인기여도</p>
-        <p className="projectDescription" style={{ marginBottom: "20px" }}>{share}</p>
+        <p className="projectDescription" style={{ marginBottom: "20px" }}>
+          {share}
+        </p>
         <p style={{ fontSize: "20px", fontWeight: "bold" }}>요약</p>
-        <p className="projectDescription" style={{ marginBottom: "20px" }}>{description}</p>
+        <p className="projectDescription" style={{ marginBottom: "20px" }}>
+          {description}
+        </p>
         <p style={{ fontSize: "20px", fontWeight: "bold" }}>담당페이지</p>
-       <p className="projectPage" style={{ marginBottom: "20px" }}>{page}</p>
-        {/* <button className="btn" onClick={() => (window.location.href = github)}>
-          GitHub Repo
-        </button> */}
-        <button className="btn" onClick={() => window.open(deployed, "_blank")}>
-          Live Link
-        </button>
+        <p className="projectPage" style={{ marginBottom: "20px" }}>{page}</p>
+
+        {github && github !== "#" && (
+          <button className="btn" onClick={() => window.open(github, "_blank")}>
+            GitHub Repo
+          </button>
+        )}
+       {deployed && deployed !== "#" && (
+  <button className="btn" onClick={() => window.open(deployed, "_blank")}>
+    {info || "Live Link"}
+  </button>
+)}
       </Modal>
     </motion.div>
   );

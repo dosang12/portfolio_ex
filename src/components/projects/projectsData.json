@@ -1,5 +1,35 @@
 [
-   {
+     {
+     "title": "경일에어샤프트 단독 웹 구축",
+    "image": "./projectImages/kyungilairshaft.png",
+    "technologies": "기획, 디자인, 퍼블리싱",
+    "member": "기간 : 2025-05 ~ 2025-07",
+    "share": "100%",
+    "description": "지인의 소공장 홈페이지 제작, 사이드 프로젝트로 단독 진행",
+    "period": "2개월",
+    "page": "FO 100%",
+    "github": "https://github.com/dosang12/Ki_home",
+    "deployed": "https://www.kyungilairshaft.com/",
+    "bgcolor": "#1A1A2E",
+    "id": "1",
+    "info": "Live Link"
+  }, 
+     {
+     "title": "삼성 SDS 내부 플랫폼 구축",
+    "image": "./projectImages/samsung.png",
+    "technologies": "기획 PL (텍스트 블러)",
+    "member": "기간 : 2025-02 ~ 2025-06",
+    "share": "70%",
+    "description": "퍼블리싱, 디자인 틀을 잡기 위한 Asis 분석 및 고객니즈 확인 / 메인 영상 Genspark AI 활용해 직접 제작 / 내부망 사용으로 인해 본 디자인 외 시안으로 사용된 디자인 블러하여 첨부",
+    "period": "6개월",
+    "page": "FO 70%",
+    "github": "#",
+    "deployed": "#",
+    "bgcolor": "#6D597A",
+    "id": "2",
+    "info": ""
+  },
+  {
      "title": "한화오션, 한화오션 ESG 운영",
     "image": "./projectImages/hanwhaocean2.png",
     "technologies": "운영 PM",
@@ -8,10 +38,10 @@
     "description": "홈페이지 전체 운영 관리",
     "period": "6개월",
     "page": "FO 100%, BO 100%",
-    "github": "https://github.com/dosang12/react_project_1_front.git",
+    "github": "#",
     "deployed": "https://www.hanwhaocean.com/",
-    "bgcolor": "#6c4bf4",
-    "id": "2",
+    "bgcolor": "#f85781",
+    "id": "3",
     "info": "Live Link"
   },
     {
@@ -21,12 +51,12 @@
     "member": "기간 : 2024-05 ~ 2024-09",
     "share": "100% ",
     "description": "한화오션 프로젝트와 병행하여 진행, 동일한 BO 사용",
-    "period": "1주",
+    "period": "4개월",
     "page": "FO 100%, BO 100%",
-    "github": "https://github.com/dosang12/react_native_1.git",
+    "github": "#",
     "deployed": "https://esg.hanwhaocean.com/",
-    "bgcolor": "#f85781",
-    "id": "2",
+    "bgcolor": "#2D6A4F",
+    "id": "4",
     "info": "Live Link"
   },
   {
@@ -35,13 +65,13 @@
     "technologies": "기획 PL",
     "member": "기간 : 2024-02 ~ 2024-06",
     "share": "80%",
-    "description": "3D Showroom 기반 홈페이지 리뉴얼",
+    "description": "3D 컨텐츠 기반 홈페이지 리뉴얼 / 주도적인 PL로 참여하여 일정 준수 및 과학정보통신부장관상 수상",
     "period": "6개월",
     "page": "FO 100%, BO 70%",
-    "github": "https://github.com/dosang12/react_project_1_front.git",
+    "github": "#",
     "deployed": "https://www.hanwhaocean.com/whatwedo/3dvs/cv/",
-    "bgcolor": "#6c4bf4",
-    "id": "3",
+    "bgcolor": "#f37737",
+    "id": "5",
     "info": "Live Link"
   },
   {
@@ -53,10 +83,10 @@
     "description": "프로젝트 중반부 투입되어 지체되어 있던 프로젝트 완수율 향상에 기여",
     "period": "3주",
     "page": "BO 관리자메뉴, FO 다국어 페이지",
-    "github": "https://github.com/dosang12/frontend_project_1.git",
+    "github": "#",
     "deployed": "https://www.celltrion.com/ko-kr",
-    "bgcolor": "#f37737",
-    "id": "4",
+    "bgcolor": "#6c4bf4",
+    "id": "6",
     "info": "Live Link"
   },
    {
@@ -71,7 +101,7 @@
     "github": "#",
     "deployed": "https://blog.naver.com/reflexion_pr/223537282957",
     "bgcolor": "#3e67ff",
-    "id": "5",
+    "id": "7",
     "info": "앱 소개 자사 블로그"
   },
   {
@@ -86,8 +116,8 @@
     "github": "https://github.com/dosang12/portfolio_ex.git",
     "deployed": "https://portfolio-ex-git-main-dosang12.vercel.app/",
     "bgcolor": "#ffcc33",
-    "id": "6",
-    "info": "깃 허브, 구현 페이지"
+    "id": "8",
+    "info": "Live Link"
   }
 
  
