@@ -30,10 +30,10 @@ const Mainbanner = () => {
           <br />
           <h3> 개발과 사용자 경험 사이, 균형을 설계하는 기획자 윤도상입니다.</h3>
           <p>저는 기획자로서 창의적이고 도전적인 마인드로 항상 새로운 기술을 탐구하고 열린 마인드로 팀원들과 커뮤니케이션 합니다.</p>
-          <a href="https://drive.google.com/file/d/1SDudhNtX-U9Au9TnuqbHA8XWYSkiyI9i/view?usp=drive_link" target="_blank">
+          <a href="https://drive.google.com/file/d/1_3X9uTPsWHT1MbS5hGdBvpG3WSydvPME/view?usp=sharing" target="_blank">
             Go to 이력서!
           </a>
-          <a href="https://drive.google.com/file/d/1d_ZyfZUS1_k4klc1lKPhk74aCGOJ6Q39/view?usp=sharing" target="_blank">
+          <a href="https://drive.google.com/file/d/12DDZl83coWQ32LeNbCOCWlqFS1H6MXaa/view?usp=sharing" target="_blank">
             Go to 경력기술서!
           </a>
           <button onClick={openModal}>Go to 기획서!</button>

@@ -90,9 +90,9 @@ const Footer = () => {
               <a href="https://github.com/dosang12" target="_blank">
                 깃허브
               </a>
-              <a href="https://drive.google.com/file/d/1SDudhNtX-U9Au9TnuqbHA8XWYSkiyI9i/view?usp=drive_link" target="_blank">
+              <a href="https://drive.google.com/file/d/1_3X9uTPsWHT1MbS5hGdBvpG3WSydvPME/view?usp=sharing" target="_blank">
                 이력서
-              </a><a href="https://drive.google.com/file/d/1d_ZyfZUS1_k4klc1lKPhk74aCGOJ6Q39/view?usp=sharing" target="_blank">
+              </a><a href="https://drive.google.com/file/d/12DDZl83coWQ32LeNbCOCWlqFS1H6MXaa/view?usp=sharing" target="_blank">
                 경력기술서
               </a>
             </p>
