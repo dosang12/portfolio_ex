@@ -68,6 +68,9 @@ const Mainbanner = () => {
             <a href="https://drive.google.com/file/d/1TUJa7mRDllvF3agxP727fCF2V9MdmSfQ/view?usp=sharing" target="_blank" className="pdflink">
               FO Contact us 기획서
             </a>
+            <a href="https://drive.google.com/file/d/1uTNvpP3mZ79rxA6pEYTJYW6C7kB_Q022/view?usp=sharing" target="_blank" className="pdflink">
+              모빌리티 제안 RFP 분석
+            </a>
             <a href="https://drive.google.com/file/d/1QTtCF2CLZUm6qp3e91iWLe8mPcUSXRwW/view?usp=sharing" target="_blank" className="pdflink">
               2025 트랜드 리포트-UIUX, 에러페이지
             </a>
@@ -75,9 +78,7 @@ const Mainbanner = () => {
             <a href="https://drive.google.com/file/d/1n6ZCHuNqW4cMAT96ZUnjwA_DHUdNAgwa/view?usp=sharing" target="_blank" className="pdflink">
               2025 트랜드 리포트-로딩바, 튜토리얼
             </a>
-            <a href="https://drive.google.com/file/d/16eJOvfxHDv7M7rF5hKWCsfkcHsv4-9a_/view?usp=sharing" target="_blank" className="pdflink">
-              준비중입니다
-            </a>
+            
           </Modal>
         </Texts>
       </Slide>
