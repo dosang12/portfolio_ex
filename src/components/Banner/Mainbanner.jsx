@@ -68,7 +68,7 @@ const Mainbanner = () => {
             <a href="https://drive.google.com/file/d/1TUJa7mRDllvF3agxP727fCF2V9MdmSfQ/view?usp=sharing" target="_blank" className="pdflink">
               FO Contact us 기획서
             </a>
-            <a href="https://drive.google.com/file/d/1uTNvpP3mZ79rxA6pEYTJYW6C7kB_Q022/view?usp=sharing" target="_blank" className="pdflink">
+            <a href="https://drive.google.com/file/d/1p2_rydf0k8MAY3s74babgOoydUrnfVdN/view?usp=sharing" target="_blank" className="pdflink">
               모빌리티 제안 RFP 분석
             </a>
             <a href="https://drive.google.com/file/d/1QTtCF2CLZUm6qp3e91iWLe8mPcUSXRwW/view?usp=sharing" target="_blank" className="pdflink">
