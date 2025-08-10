@@ -92,7 +92,7 @@ const Footer = () => {
               </a>
               <a href="https://drive.google.com/file/d/1_3X9uTPsWHT1MbS5hGdBvpG3WSydvPME/view?usp=sharing" target="_blank">
                 이력서
-              </a><a href="https://drive.google.com/file/d/12DDZl83coWQ32LeNbCOCWlqFS1H6MXaa/view?usp=sharing" target="_blank">
+              </a><a href="https://drive.google.com/file/d/1UgoMilg4xcNbDlpcHQfj_-1t5owwXSrf/view?usp=sharing" target="_blank">
                 경력기술서
               </a>
             </p>

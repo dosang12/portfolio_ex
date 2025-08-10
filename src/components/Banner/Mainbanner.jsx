@@ -33,7 +33,7 @@ const Mainbanner = () => {
           <a href="https://drive.google.com/file/d/1_3X9uTPsWHT1MbS5hGdBvpG3WSydvPME/view?usp=sharing" target="_blank">
             Go to 이력서!
           </a>
-          <a href="https://drive.google.com/file/d/12DDZl83coWQ32LeNbCOCWlqFS1H6MXaa/view?usp=sharing" target="_blank">
+          <a href="https://drive.google.com/file/d/1UgoMilg4xcNbDlpcHQfj_-1t5owwXSrf/view?usp=sharing" target="_blank">
             Go to 경력기술서!
           </a>
           <button onClick={openModal}>Go to 기획서!</button>
@@ -63,17 +63,20 @@ const Mainbanner = () => {
             }}
           >
             <img src={closeModalIcon} className="closeMenu closeModal" onClick={closeModal} alt="Close"></img>
-            <h2>기획서</h2>
-            <p className="pdfinfo">아래 기획서는 회사명, 주요페이지명이 마스킹되어 있습니다.</p>
-
+            <h2>기획서&작성문서</h2>
+            <p className="pdfinfo">아래 기획서(제안서 제외)는 회사명, 주요페이지명이 마스킹되어 있습니다.</p>
             <a href="https://drive.google.com/file/d/1TUJa7mRDllvF3agxP727fCF2V9MdmSfQ/view?usp=sharing" target="_blank" className="pdflink">
               FO Contact us 기획서
             </a>
-            <a href="https://drive.google.com/file/d/16eJOvfxHDv7M7rF5hKWCsfkcHsv4-9a_/view?usp=sharing" target="_blank" className="pdflink">
-              추가 기획서 준비중입니다.
+            <a href="https://drive.google.com/file/d/1QTtCF2CLZUm6qp3e91iWLe8mPcUSXRwW/view?usp=sharing" target="_blank" className="pdflink">
+              2025 트랜드 리포트-UIUX, 에러페이지
+            </a>
+            
+            <a href="https://drive.google.com/file/d/1n6ZCHuNqW4cMAT96ZUnjwA_DHUdNAgwa/view?usp=sharing" target="_blank" className="pdflink">
+              2025 트랜드 리포트-로딩바, 튜토리얼
             </a>
             <a href="https://drive.google.com/file/d/16eJOvfxHDv7M7rF5hKWCsfkcHsv4-9a_/view?usp=sharing" target="_blank" className="pdflink">
-              추가 기획서 준비중입니다.
+              준비중입니다
             </a>
           </Modal>
         </Texts>
