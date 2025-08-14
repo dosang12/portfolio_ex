@@ -71,6 +71,9 @@ const Mainbanner = () => {
             <a href="https://drive.google.com/file/d/1p2_rydf0k8MAY3s74babgOoydUrnfVdN/view?usp=sharing" target="_blank" className="pdflink">
               모빌리티 제안 RFP 분석
             </a>
+            <a href="https://drive.google.com/file/d/1KKFV0eIDKzeDHQJRY4GvJqm_czCk8IAA/view?usp=sharing" target="_blank" className="pdflink">
+              모빌리티 제안서 부분 작성
+            </a>
             <a href="https://drive.google.com/file/d/1QTtCF2CLZUm6qp3e91iWLe8mPcUSXRwW/view?usp=sharing" target="_blank" className="pdflink">
               2025 트랜드 리포트-UIUX, 에러페이지
             </a>
